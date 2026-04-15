@@ -1,0 +1,25 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --primario: #784D3C;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+/* CONFIGURACION GLOBAL */
+/* HTML y BODY con un modificador para usar la medida "rem" facilmente. */
+html{
+    font-size: 62.5%; /* 1 rem = 10px */
+    box-sizing: border-box; /* Aplica un modelo de diseño de "box" natural a todos los elementos, pero permitiendo a los elementos cambiar. */
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
