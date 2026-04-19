@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/icono.png">
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,17 +13,23 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Café La Fauna</title>
 </head>
+<button id="botonSubir" title="Ir al Inicio">
+    <svg viewBox="0 0 24 24" width="20" height="20"
+        fill="none" stroke="currentColor"
+        stroke-width="2.5" stroke-linecap="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+</button>
 <body>
-
     <header class="header">
         <div class="contenedor">
             <div class="barra">
                 <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Café<span class="logo__bold">LaFauna</span></h1>
+                    <h1 class="logo__nombre no-margin centrar-texto">Café<span class="texto__bold">LaFauna</span></h1>
                 </a>
                 <nav class="navegacion">
                     <a href="#menu" class="navegacion__enlace">Menu</a>
-                    <a href="#sala-lectura" class="navegacion__enlace">Sala de Lectura Argonáutica</a>
+                    <a href="sala-lectura.html" class="navegacion__enlace">Sala de Lectura Argonáutica</a>
                     <a href="#archivo-fauno" class="navegacion__enlace">Archivo Fauno</a>
                     <a href="#concursos" class="navegacion__enlace">Concursos de Cuento</a>
                 </nav>
@@ -40,10 +47,7 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <picture>
-                        <source srcset="img/blog1.webp" type="image/webp">
-                        <img src="img/blog1.jpg" alt="imagen café la fauna - cuernavaca">
-                    </picture>
+                    <img src="img/blog1.webp" alt="imagen café la fauna - cuernavaca">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Café La Fauna - Cuernavaca</h4>
@@ -54,24 +58,18 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <picture>
-                        <source srcset="img/blog2.webp" type="image/webp">
-                        <img src="img/blog2.jpg" alt="imagen sala de lectura argonáutica">
-                    </picture>
+                    <img src="img/blog2.webp" alt="imagen sala de lectura argonáutica">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Sala de Lectura Argonáutica</h4>
                     <p>Un lugar hecho por lectores para lectores. Los libros que encuentres en Argonáutica son, en gran parte, donaciones hechas por lectores y escritores. Otro tanto son ejemplares que nos parece interesante añadir al acervo. Probablemente el libro que tomes, o veas que alguien lee, fue donado por algún amante de los libros.</p>
-                    <a href="#sala-lectura" class="boton boton--primario">Acerca De</a>
+                    <a href="sala-lectura.html" class="boton boton--primario">Acerca De</a>
                 </div>
             </article>
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <picture>
-                        <source srcset="img/blog3.webp" type="image/webp">
-                        <img src="img/blog3.jpg" alt="imagen archivo fauno">
-                    </picture>
+                    <img src="img/blog3.webp" alt="imagen archivo fauno">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Archivo Fauno</h4>
@@ -82,10 +80,7 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <picture>
-                        <source srcset="img/blog4.webp" type="image/webp">
-                        <img src="img/blog4.jpg" alt="imagen concursos de cuento">
-                    </picture>
+                    <img src="img/blog4.webp" alt="imagen concursos de cuento">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Concursos de Cuento</h4>
@@ -93,7 +88,6 @@
                     <a href="#concursos" class="boton boton--primario">Más Informacion</a>
                 </div>
             </article>
-
         </main>
 
         <aside class="sidebar">
@@ -132,24 +126,23 @@
                 </li>
             </ul>
         </aside>
-
     </div>
 
     <footer class="footer">
         <div class="contenedor">
             <div class="barra">
                 <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Café<span class="logo__bold">LaFauna</span></h1>
+                    <h1 class="logo__nombre no-margin centrar-texto">Café<span class="texto__bold">LaFauna</span></h1>
                 </a>
                 <nav class="navegacion">
                     <a href="#menu" class="navegacion__enlace">Menu</a>
-                    <a href="#sala-lectura" class="navegacion__enlace">Sala de Lectura Argonáutica</a>
+                    <a href="sala-lectura.html" class="navegacion__enlace">Sala de Lectura Argonáutica</a>
                     <a href="#archivo-fauno" class="navegacion__enlace">Archivo Fauno</a>
                     <a href="#concursos" class="navegacion__enlace">Concursos de Cuento</a>
                 </nav>
             </div>
         </div>
     </footer>
-
+    <script src="js/main.js"></script>
 </body>
 </html>
