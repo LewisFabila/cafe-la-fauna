@@ -117,14 +117,35 @@ img{
 
 /* HEADER */
 .header{
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.6), 
-        rgba(0, 0, 0, 0.8)
-        ), url(../img/banner.gif);
+    position: relative;
     height: 60rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    overflow: hidden;
+}
+
+.header__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.8)
+    );
+    z-index: 1;
+}
+
+.header .contenedor,
+.header__texto {
+    position: relative;
+    z-index: 2;
 }
 
 .header__texto{
@@ -298,6 +319,7 @@ img{
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s;
+    z-index: 3;
 }
 
 .fondoModal.open {
@@ -313,6 +335,7 @@ img{
     height: auto;
     position: relative;
     text-align: center;
+    z-index: 4;
 }
 
 .modal img{
