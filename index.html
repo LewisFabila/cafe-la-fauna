@@ -13,13 +13,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Café La Fauna</title>
 </head>
-<button id="botonSubir" title="Ir al Inicio">
+
+<button id="botonSubir" title="ir a inicio">
     <svg viewBox="0 0 24 24" width="20" height="20"
         fill="none" stroke="currentColor"
         stroke-width="2.5" stroke-linecap="round">
         <polyline points="18 15 12 9 6 15"></polyline>
     </svg>
 </button>
+
 <body>
     <header class="header">
         <div class="contenedor">
@@ -28,10 +30,10 @@
                     <h1 class="logo__nombre no-margin centrar-texto">Café<span class="texto__bold">LaFauna</span></h1>
                 </a>
                 <nav class="navegacion">
-                    <a href="#menu" class="navegacion__enlace">Menu</a>
-                    <a href="sala-lectura.html" class="navegacion__enlace">Sala de Lectura Argonáutica</a>
-                    <a href="#archivo-fauno" class="navegacion__enlace">Archivo Fauno</a>
-                    <a href="#concursos" class="navegacion__enlace">Concursos de Cuento</a>
+                    <a href="menu.html" class="nav__enlace">Menu</a>
+                    <a href="sala-lectura.html" class="nav__enlace">Sala de Lectura Argonáutica</a>
+                    <a href="#archivo-fauno" class="nav__enlace">Archivo Fauno</a>
+                    <a href="#concursos" class="nav__enlace">Concursos de Cuento</a>
                 </nav>
             </div>
         </div>
@@ -44,7 +46,6 @@
     <div class="contenedor contenido-principal">
         <main class="blog">
             <h3>Sobre Nosotros</h3>
-
             <article class="entrada">
                 <div class="entrada__imagen">
                     <img src="img/blog1.webp" alt="imagen café la fauna - cuernavaca">
@@ -52,10 +53,9 @@
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Café La Fauna - Cuernavaca</h4>
                     <p>Nuestro menú presenta una oferta variada pensada para distintos gustos y momentos del día. Incluye bebidas calientes, infusiones y tés, así como opciones refrescantes de bebidas frías y tisanas. En el apartado de alimentos, combina lo tradicional con alternativas más completas como hamburguesas, emparedados y ensaladas, además de opciones dulces y snacks ideales para pasar el rato. También contemplamos opciones vegetarianas y paquetes, lo que lo convierte en un menú versátil que se adapta tanto a quienes buscan una comida ligera como a quienes desean algo más sustancioso.</p>
-                    <a href="#menu" class="boton boton--primario">Ver Menu</a>
+                    <a href="menu.html" class="boton boton--primario">Ver Menu</a>
                 </div>
-            </article>
-
+            </article><!-- Entrada 1 -->
             <article class="entrada">
                 <div class="entrada__imagen">
                     <img src="img/blog2.webp" alt="imagen sala de lectura argonáutica">
@@ -65,8 +65,7 @@
                     <p>Un lugar hecho por lectores para lectores. Los libros que encuentres en Argonáutica son, en gran parte, donaciones hechas por lectores y escritores. Otro tanto son ejemplares que nos parece interesante añadir al acervo. Probablemente el libro que tomes, o veas que alguien lee, fue donado por algún amante de los libros.</p>
                     <a href="sala-lectura.html" class="boton boton--primario">Acerca De</a>
                 </div>
-            </article>
-
+            </article><!-- Entrada 2 -->
             <article class="entrada">
                 <div class="entrada__imagen">
                     <img src="img/blog3.webp" alt="imagen archivo fauno">
@@ -76,8 +75,7 @@
                     <p>Archivo Fauno te mostrara la selección de novelas y libros disponibles para leer en la cafetería. Aquí encontrarás obras destacadas de distintos géneros y autores, pensadas para acompañar la experiencia de lectura en un ambiente tranquilo y acogedor.</p>
                     <a href="#archivo-fauno" class="boton boton--primario">Explorar</a>
                 </div>
-            </article>
-
+            </article><!-- Entrada 3 -->
             <article class="entrada">
                 <div class="entrada__imagen">
                     <img src="img/blog4.webp" alt="imagen concursos de cuento">
@@ -87,7 +85,7 @@
                     <p>Concursos realizados en colaboración entre “Lengua de Diablo Editorial” y la sala de lectura “Argonáutica” de Café La Fauna. Su propósito es el fomento y difusión de la creatividad y artes literarias.</p>
                     <a href="#concursos" class="boton boton--primario">Más Informacion</a>
                 </div>
-            </article>
+            </article><!-- Entrada 4 -->
         </main>
 
         <aside class="sidebar">
@@ -98,8 +96,8 @@
                     <p class="widget-info__label">Direccion:
                         <span class="widget-info__texto">Dwight Morrow #8 local 4 Cuernavaca, Centro.</span>
                     </p>
-                    <a href="#mapa" class="boton boton--secundario">Ver Mapa</a>
-                </li>
+                    <a onclick="abrirModal()" class="boton boton--secundario">Ver Mapa</a>
+                </li><!-- Widget 1 -->
                 <li class="widget-info">
                     <h4 class="no-margin">Horario</h4>
                     <p class="widget-info__label">Lunes a Sábado:
@@ -109,23 +107,45 @@
                         <span class="widget-info__texto">10:00 a 6:00 p.m.</span>
                     </p>
                     <p class="widget-info__label">(*) Tiempos de preparacion de 15 minutos.</p>
-                    <a href="#menu" class="boton boton--secundario">Ver Menu</a>
-                </li>
+                    <a href="menu.html" class="boton boton--secundario">Ver Menu</a>
+                </li><!-- Widget 2 -->
                 <li class="widget-info">
                     <h4 class="no-margin">Contacto</h4>
                     <p class="widget-info__label">Telefono:
                         <span class="widget-info__texto">777 688 6663</span>
                     </p>
-                    <p class="widget-info__label">Facebook:
-                        <span class="widget-info__texto">Cafelafauna</span>
+                    <p class="widget-info__label">E-mail:
+                        <span class="widget-info__texto">cafelafauna@gmail.com</span>
                     </p>
                     <div class="botones">
                         <a href="#llamada" class="boton boton--secundario">Llamar</a>
-                        <a href="https://www.facebook.com/cafelafauna" target="_blank" class="boton boton--secundario">Ver Facebook</a>
+                        <a href="#gmail" class="boton boton--secundario">Enviar Correo</a>
                     </div>
-                </li>
+                </li><!-- Widget 3 -->
+                <li class="widget-info">
+                    <h4 class="no-margin">Redes Sociales</h4>
+                    <p class="widget-info__label">Facebook:
+                        <span class="widget-info__texto">Café La Fauna</span>
+                    </p>
+                    <p class="widget-info__label">Instagram:
+                        <span class="widget-info__texto">cafelafauna</span>
+                    </p>
+                    <div class="botones">
+                        <a href="https://www.facebook.com/cafelafauna" target="_blank" class="boton boton--secundario">Ver Facebook</a>
+                        <a href="https://www.instagram.com/cafelafauna/" target="_blank" class="boton boton--secundario">Ver Instagram</a>
+                    </div>
+                </li><!-- Widget 4 -->
             </ul>
         </aside>
+    </div><!-- Contenedor con Contenido Principal -->
+
+    <div class="fondoModal" id="fondoModal-mapa" onclick="cerrarConFondo(event)">
+        <div class="modal">
+            <button class="modal-close" onclick="cerrarModal()">&times;</button>
+            <h4>Café La Fauna Cuernavaca - ¿Cómo llegar?</h4>
+            <img src="img/mapa.webp" alt="imagen mapa">
+            <a href="https://maps.app.goo.gl/qczMpQh3h6ka9C2a8" target="_blank" class="boton boton--secundario">Ver Google Maps</a>
+        </div>
     </div>
 
     <footer class="footer">
@@ -135,10 +155,10 @@
                     <h1 class="logo__nombre no-margin centrar-texto">Café<span class="texto__bold">LaFauna</span></h1>
                 </a>
                 <nav class="navegacion">
-                    <a href="#menu" class="navegacion__enlace">Menu</a>
-                    <a href="sala-lectura.html" class="navegacion__enlace">Sala de Lectura Argonáutica</a>
-                    <a href="#archivo-fauno" class="navegacion__enlace">Archivo Fauno</a>
-                    <a href="#concursos" class="navegacion__enlace">Concursos de Cuento</a>
+                    <a href="menu.html" class="nav__enlace">Menu</a>
+                    <a href="sala-lectura.html" class="nav__enlace">Sala de Lectura Argonáutica</a>
+                    <a href="#archivo-fauno" class="nav__enlace">Archivo Fauno</a>
+                    <a href="#concursos" class="nav__enlace">Concursos de Cuento</a>
                 </nav>
             </div>
         </div>
