@@ -149,7 +149,7 @@
                     <p class="widget-info__label">Direccion:
                         <span class="widget-info__texto">Dwight Morrow #8 local 4 Cuernavaca, Centro.</span>
                     </p>
-                    <a onclick="abrirModal()" class="boton boton--secundario">Ver Mapa</a>
+                    <a onclick="abrirModal('modal-mapa')" class="boton boton--secundario">Ver Mapa</a>
                 </li><!-- Widget 1 -->
                 <li class="widget-info">
                     <h4 class="no-margin">Horario</h4>
@@ -192,14 +192,14 @@
         </aside>
     </div><!-- Contenedor de Contenido Principal -->
 
-    <div class="fondoModal" id="fondoModal-mapa" onclick="cerrarConFondo(event)">
+    <div class="fondoModal" id="modal-mapa" onclick="cerrarConFondo(event, 'modal-mapa')">
         <div class="modal">
-            <button class="modal-close" onclick="cerrarModal()">&times;</button>
-            <h4>Café La Fauna Cuernavaca - ¿Cómo llegar?</h4>
+            <button class="modal-close" onclick="cerrarModal('modal-mapa')">&times;</button>
+            <h4 class="no-margin centrar-texto">Café La Fauna Cuernavaca - ¿Cómo llegar?</h4>
             <img src="assets/img/mapa.webp" alt="imagen mapa">
             <a href="https://maps.app.goo.gl/qczMpQh3h6ka9C2a8" target="_blank" class="boton boton--secundario">Ver Google Maps</a>
         </div>
-    </div>
+    </div><!-- Modal del Mapa -->
 
     <footer class="footer">
         <div class="contenedor">

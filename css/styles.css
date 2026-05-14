@@ -328,13 +328,13 @@ img{
 .fondoModal {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.50);
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.2s;
+    transition: opacity .2s;
     z-index: 3;
 }
 
@@ -344,36 +344,31 @@ img{
 }
 
 .modal {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: min(90vw, 85rem);
+    height: auto;
+    padding: clamp(4rem, 5vw, 5rem)
+            clamp(1.5rem, 4vw, 4rem)
+            clamp(1.5rem, 3vw, 2rem);
     background: var(--blanco);
     border-radius: 2rem;
-    padding: 0 2rem;
-    width: 35rem;
-    height: auto;
-    position: relative;
-    text-align: center;
-    z-index: 4;
+    overflow: auto;
 }
 
 .modal img{
-    padding-bottom: 1rem;
-}
-
-@media (min-width: 768px) {
-    .modal{
-        width: 60rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .modal{
-        width: 80rem;
-    }
-}
-
-@media (min-width: 1441px) {
-    .modal{
-        width: 100rem;
-    }
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: 1.5rem;
+    margin: 2rem 0;
 }
 
 .modal-close {
@@ -400,31 +395,38 @@ img{
 }
 
 /* SALA DE LECTURA ARGONAUTICA */
-.sala-lectura__entrada{
+.lectura__entrada{
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--gris);
     overflow: hidden;
 }
 
-.sala-lectura__entrada:last-of-type{
+.lectura__entrada:last-of-type{
     border: none;
     margin-bottom: 0;
 }
 
-.sala-lectura__imagen {
+.lectura__imagen-izquierda {
     float: left;
     width: 50%;
     margin-right: 2rem;
     margin-bottom: 1rem;
 }
 
-.sala-lectura__imagen img {
+.lectura__imagen-derecha {
+    float: right;
+    width: 50%;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.lectura__imagen img {
     width: 100%;
     display: block;
 }
 
 @media (max-width: 768px) {
-    .sala-lectura__imagen {
+    .lectura__imagen-izquierda, .lectura__imagen-derecha {
         float: none;
         width: 100%;
         margin: 0;
@@ -521,7 +523,7 @@ img{
     }   
 }
 
-/* ENTRADAS DE BLOG */
+/* GALERIA DE IMAGENES */
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(48rem, 1fr));
@@ -534,6 +536,7 @@ img{
     background: var(--negro);
     border-radius: 2rem;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .galeria-item.vertical {
