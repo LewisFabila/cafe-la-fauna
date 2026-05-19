@@ -6,27 +6,20 @@
     <link rel="icon" type="image/png" href="assets/img/icono.png">
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" as="style">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
     <title>Café La Fauna - Sala de Lectura Argonáutica</title>
 </head>
+
 <button id="botonSubir" title="Ir al Inicio">
-    <svg viewBox="0 0 24 24" width="20" height="20"
-        fill="none" stroke="currentColor"
-        stroke-width="2.5" stroke-linecap="round">
-        <polyline points="18 15 12 9 6 15"></polyline>
-    </svg>
+    <i class="bi bi-chevron-up"></i>
 </button>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="navbar-contenedor">
-                <a class="logo" href="index.html">
+                <a href="index.html">
                     <h1 class="logo__nombre no-margin centrar-texto">Café<span class="texto__bold">LaFauna</span></h1>
                 </a><!-- Logo Nav de Café La Fauna -->
                 <ul class="navegacion">
@@ -38,8 +31,8 @@
                             Concursos de Cuento <i class="bi bi-chevron-down"></i>
                         </button>
                         <div class="navegacion-dropdown__opciones" id="dropDownMenu">
-                            <a href="#"><i class="bi bi-trophy"></i>Concurso de Cuento 2025</a>
-                            <a href="#"><i class="bi bi-bookmark-star"></i>La Elección del Lector</a>
+                            <a href="concursos-cuento/concursoCuento-2025.html"><i class="bi bi-trophy"></i>Concurso de Cuento 2025</a>
+                            <a href="la-eleccion-del-lector.html"><i class="bi bi-bookmark-star"></i>La Elección del Lector</a>
                         </div>
                     </li>
                 </ul><!-- Navegacion para Desktop -->
@@ -49,15 +42,15 @@
             </div><!-- Contenedor del Contenido del Navbar -->
             <div class="navegacion-movil" id="navMovilMenu">
                 <a href="menu.html">Menú</a>
-                <a href="sala-lectura.html">Sala de Lectura Argonáutica</a>
+                <a href="sala-lectura.html" class="nav__seleccionado">Sala de Lectura Argonáutica</a>
                 <a href="archivo-fauno.html">Archivo Fauno</a>
                 <div class="navegacion-movil-seccion"></div>
                 <button id="dropdownBtn" aria-expanded="false">
                     Concursos de Cuento <i class="bi bi-chevron-down dropdown-icono" id="dropDownIcono"></i>
                 </button>
                 <div class="navegacion-movil-dropdown__opciones" id="dropDownMenuMovil">
-                    <a href="#"><i class="bi bi-trophy"></i>Concurso de Cuento 2025</a>
-                    <a href="#"><i class="bi bi-bookmark-star"></i>La Elección del Lector</a>
+                    <a href="concursos-cuento/concursoCuento-2025.html"><i class="bi bi-trophy"></i>Concurso de Cuento 2025</a>
+                    <a href="la-eleccion-del-lector.html"><i class="bi bi-bookmark-star"></i>La Elección del Lector</a>
                 </div>
             </div><!-- Navegacion para Moviles -->
         </nav>
@@ -67,7 +60,7 @@
         <h3 class="centrar-texto">Sala de Lectura Argonáutica</h3>
         <div class="lectura__entrada">
             <div class="lectura__imagen-izquierda">
-                <img src="assets/img/sala-lectura1.webp" alt="imagen sala">
+                <img src="assets/img/sala-lectura1.webp" alt="Imagen Sala de Lectura">
                 <figcaption class="titulo-imagen">
                     Argonáutica, sala de lectura de Café La Fauna. Amor por los libros.
                 </figcaption>
@@ -77,12 +70,12 @@
             <p>Pareciera que los libreros y sus detalles son decoración, es innegable que los libros siempre dan un aura a los lugares en los que están, pero quien conoce el ambiente de las librerías y bibliotecas sabe que ahí pasa algo más, que no se trata solo de ambientación. No es exageración decir que son maestros, pues algunos abren el camino a otras formas de pensamiento, también nos dan algo a qué agarrarnos en malos tiempos e incontables emociones en historias memorables, son compañeros de viaje incondicionales. Así que entendemos la necesidad de un refugio para leer. Es cierto que hay muchos lugares para ello, pensamos que nunca sobra uno más.</p>
             <p>Lo de “Sala de lectura” es un término que ya existía. Sabíamos que rondaba por ahí hasta que alguien nos comentó que era un programa, el Programa Nacional Salas de Lectura. Inició en 1995 y en 2025 cumple 30 años. Partidos políticos más, partidos políticos menos, el programa en sí tiene la intención de difundir la lectura, de poner al alcance de las comunidades libros gratuitos, una especie de microbibliotecas de barrio, atendidas por personas del mismo lugar. Así que fuimos, hicimos el programa de mediación de lectura y una vez concluido, nos otorgaron una caja llena de libros a cambio de ponerlos al alcance de los lectores. ¡Claro que sí! Lo mencionamos porque es parte de la historia de Argonáutica. Aunque hace años que no recibimos libros a través del programa, el primer acervo fueron cien libros del programa más algunos que aportamos de manera personal a ese primer librero de la sala. Luego se hizo difícil la continuidad. Por fortuna, los libros comenzaron a llegar en forma de donaciones, Argonáutica tenía vida propia. Conservamos lo de “Sala de lectura” porque además los primeros sillones fueron de la sala de una amiga que se cambió de casa. Su sala pasó de ser sala de casa, a sala de lectura.</p>
             <div class="lectura__imagen-derecha">
-                <img src="assets/img/sala-lectura2.webp" loading="lazy" decoding="async" alt="imagen sala">
+                <img src="assets/img/sala-lectura2.webp" loading="lazy" decoding="async" alt="Imagen Sala de Lectura">
             </div>
             <p>Lo relacionado a los libros tiende a ser tranquilo, solo que no siempre. Igual que un río calmo en la superficie, las corrientes invisibles son impetuosas. En Argonáutica han nacido romances del silencioso juego de miradas entre lectores que un día se descubren observando qué lee el otro. También se han roto corazones, las parejas que antes venían a leer juntas vuelven en solitario de cuando en cuando, quién sabe si buscando encontrarse o esperando no hacerlo. Algunos de ellos donan los libros que leían juntos, los acogemos con cariño y sin demasiadas preguntas. Entendemos que se han hecho demasiado grandes para estar en casa y en Argonáutica encontrarán nuevos lectores que los leerán sin sospechar la historia de amor que guardan, hasta que una nota olvidada entre sus páginas devele que alguna vez, ese libro perteneció a dos personas que se querían.</p>
             <p>Argonáutica también preserva cinco donaciones póstumas. Quienes leemos, en algún momento llegamos a la pregunta ¿Qué pasará con mis libros si ya no estoy? Algunas veces la familia que recibe los libros de un ser querido no tiene espacio y tiene que buscarles un lugar, otras veces los obsequian, o los venden. Quienes los donan lo hacen a manera de homenaje, dejan que las cosas que alguna vez fueron un tesoro para alguien, lo sigan siendo apra alguien más. La abuela de Dani era una gran lectora de novelas, cuando falleció, Dani conservó las más significativas y donó una parte a Argonáutica. Son novelas de otro tiempo, con colores desvaídos por los años, pero no por ello menos entretenidas o menos interesantes. Las buenas historias son atemporales. Dani, que por lo regular viene a desayunar, nos contó una mañana que su abuela era el tipo de persona que leía mucho y recomendaba con entusiasmo qué leer. En Argonáutica sus libros siguen haciendo lo mismo. Jorge, quien venía por las tardes, falleció sin aviso poco después de la pandemia. Solía visitar La Fauna con su esposa y conversar hasta el último minuto antes (y a veces después), del cierre. Se le notaba lo amable solo de mirarlo. La primera vez que vino olvidó su paraguas, era temporada de lluvias y salimos tras él pensando que podría necesitarlo, las nubes estaban tan oscuras que se podían ver aunque el sol ya se hubiera metido. Desde ese día se hizo más conversador y bromista. Cuando faltó, fue Julia, su esposa, quién donó una parte de su biblioteca diciendo que a él le habría gustado que sus libros estuvieran en la sala de lectura. Las bibliotecas encierran parte de nuestra personalidad y revelan parte de las cosas que nos intrigan o inquietan. A lo largo de su vida, Jorge nutrió su biblioteca con los temas que le interesaban. Él ya tenía algunos años visitando La Fauna y sabía que las personas realmente vienen a la sala de lectura, por una conversación con él fue que pusimos el mueblecito en el que los lectores colocan los libros que están leyendo, así no tienen que buscarlos cada que vengan, ya saben donde estarán la siguiente vez que vengan. La tercera es una donación de rescate. El amigo, ya mayor, de una buena amiga y habitual de Argonáutica, falleció por causas naturales. Su hijo conservó su casa pero no sabía qué hacer con los libros dentro de ella, eran de temas académicos, de música, uno que otro de arte y algunas novelas que es posible encontrar en los libreros para lectura y consulta. La cuarta es una donación pequeña pero no por ello menos valorada, cinco libros de temática fantástica, los favoritos de Patricia Garrido. Los trajo su hija luego del fallecimiento de Patricia para que otras personas pudieran encontrar la magia que esos cinco libros transmitían a su mamá. Se trata de algo de gran importancia para nosotros, es una de las razones por las que los libros de la sala no se venden ni se intercambian.</p>
             <div class="lectura__imagen-izquierda">
-                <img src="assets/img/sala-lectura3.webp" loading="lazy" decoding="async" alt="imagen sala">
+                <img src="assets/img/sala-lectura3.webp" loading="lazy" decoding="async" alt="Imagen Sala de Lectura">
                 <figcaption class="titulo-imagen">
                     Donacion de María Teresa Ramírez Velázquez a Argonáutica.
                 </figcaption>
@@ -93,7 +86,7 @@
         <div class="lectura__entrada">
             <h4>Libro de Donaciones</h4>
             <div class="lectura__imagen-derecha">
-                <img src="assets/img/sala-lectura4.webp" loading="lazy" decoding="async" alt="imagen sala">
+                <img src="assets/img/sala-lectura4.webp" loading="lazy" decoding="async" alt="Imagen Sala de Lectura">
             </div>
             <p>Muchas veces quienes vienen a donar libros prefieren mantenerse en el anonimato, optan porque no les mencionemos o etiquetemos en las redes. Sus razones tendrán. Aún así, consideramos que es importante dejar en algún sitio la contribución que han hecho. Por ello hicimos el “Libro de donaciones”, un libro en que quienes donan pueden escribir con su puño y letra algún mensaje para los lectores de la sala. Ahí quedan inscritos los nombres de quienes han tenido la generosidad de donar libros sin más ánimo que fomentar el amor por la lectura.</p>
             <p>Cada que hagas una donación te pediremos también que llenes un papelito con algunos datos básicos, para etiquetarte si así lo deseas, en caso de que hagamos una publicación de la donación.</p>
@@ -101,7 +94,7 @@
         <div class="lectura__entrada">
             <h4>¿Qué Significa Argonáutica?</h4>
             <div class="lectura__imagen-izquierda">
-                <img src="assets/img/sala-lectura5.webp" loading="lazy" decoding="async" alt="imagen sala">
+                <img src="assets/img/sala-lectura5.webp" loading="lazy" decoding="async" alt="Imagen Sala de Lectura">
             </div>
             <p>Hace referencia a “Las argonáuticas” de Apolonio de Rodas, un autor de hace muchísimo tiempo. Cuenta la historia de Jasón y los argonáutas. Una aventura fantástica, épica hasta la última letra, llena de peligros, seres mitológicos y encrucijadas con el destino. El nombre del barco en el que viajaban, “Argos”, junto con la palabra “nauta”, del griego “nautes” que significa “navegante” da origen a “Argonáutica”, una idea que refiere a las aventuras de los navegantes al explorar un mundo desconocido, lleno de riesgos, satisfacciones, maravillas y recompensas. También de amor, porque en la historia original el amor de Medea y Jasón es parte de lo que mueve la historia. El amor mueve todo. La argonáutica encierra el arte de navegar por la vida, de encontrar nuestra propia historia y al mismo tiempo, la posibilidad de descubrir la enseñanza de otros en los libros que hay en ella.</p>
         </div><!-- Entrada 3 -->
@@ -115,14 +108,14 @@
         <div class="lectura__entrada">
             <h4>Libros Morelenses</h4>
             <div class="lectura__imagen-derecha">
-                <img src="assets/img/sala-lectura6.webp" loading="lazy" decoding="async" alt="imagen sala">
+                <img src="assets/img/sala-lectura6.webp" loading="lazy" decoding="async" alt="Imagen Sala de Lectura">
             </div>
             <p>Dentro del acervo tenemos una sección dedicada a autores y editoriales morelenses, la mayoría independientes, que ocupan un lugar en el mapa literario de la entidad. Muchos de ellos han presentado sus libros en Café La Fauna, cada que se puede compramos uno para adicionarlo a la sala, otras ocasiones, ellos donan un ejemplar con la misma generosidad que lo hacen los lectores. En esa sección hay de todo, poesía, ciencia ficción, novela contemporánea, cuentos, periodismo, fanzines, terror, cyberpunk, autobiografía, ensayo y hasta un estudio matemático. Por supuesto es solo una fracción de lo que se escribe en Morelos, de autores y editoriales con quienes hemos coincidido y está en permanente construcción.</p>
         </div><!-- Entrada 5 -->
         <div class="lectura__entrada">
             <h4>Logo</h4>
             <div class="lectura__imagen-izquierda">
-                <img src="assets/img/sala-lectura7.webp" loading="lazy" decoding="async" alt="imagen sala">
+                <img src="assets/img/sala-lectura7.webp" loading="lazy" decoding="async" alt="Imagen Sala de Lectura">
             </div>
             <p>Argonáutica tiene un logo en el que se ve un barco escapar volando de un tentáculo gigante surgiendo de un mar embravecido. El barco es el escape del peligro de la ignorancia a través de lo imposible, de aprender a volar mediante la imaginación y el conocimiento. También representa el mundo de fantasía al que es posible acceder mediante la literatura, el viaje épico de estar vivo y el gran aliado que es la literatura en ese viaje.</p>
         </div><!-- Entrada 6 -->
@@ -133,7 +126,7 @@
         <div class="lectura__entrada">
             <h4>Eventos Literarios</h4>
             <div class="lectura__imagen-derecha">
-                <img src="assets/img/sala-lectura8.webp" loading="lazy" decoding="async" alt="imagen sala">
+                <img src="assets/img/sala-lectura8.webp" loading="lazy" decoding="async" alt="Imagen Sala de Lectura">
             </div>
             <p>Además de ser un espacio abierto para la lectura, Argonáutica es sede de presentaciones literarias en un ambiente en el que los autores y sus lectores pueden verse cara a cara, algo importante cuando aún no eres Stephen King, J. K. Rowling o Brandon Sanderson. El espacio es muy amigable con las editoriales independientes, principalmente por la vocación literaria, pero también en gran parte porque lo independiente necesita amigos, sitios en donde no haya costos adicionales por presentar un libro. Después de todo se trata de ayudar a que la escritura y lectura tengan un punto de encuentro.</p>
             <p>Como puedes ver, en Argonáutica pasan muchas cosas, pero si vienes en un día cualquiera es tan tranquilo que parece que nunca pasa nada, y aún faltan algunas cosas.</p>
@@ -155,7 +148,7 @@
         <div class="lectura__entrada">
             <h4>Lectores en Acción</h4>
             <div class="lectura__imagen-izquierda">
-                <img src="assets/img/sala-lectura9.webp" loading="lazy" decoding="async" alt="imagen sala">
+                <img src="assets/img/sala-lectura9.webp" loading="lazy" decoding="async" alt="Imagen Sala de Lectura">
             </div>
             <p>Solemos tomar fotografías de personas leyendo. Lo imaginamos como las pinturas de otra época en donde aparecen personas haciendo algo tan sencillo como cocinar, caminar, conversar o leer. Con el tiempo se vuelven testimonios de una época, de un momento en el tiempo. Si de pronto alguien de nosotros se acerca a preguntarte si puede tomarte una foto leyendo es para eso, para capturar un momento de compañía entre quien lee y su libro y de paso, mostrar que hay personas leyendo en el mundo, que eso de que la gente no lee es una verdad parcial, lo que hace falta es contagiarnos unos a otros del amor por la lectura y los libros. Cada que un lector le muestra el camino de los libros a alguien más, le da un regalo maravilloso. Puedes ver algunas lectoras y lectores en acción en la página de Facebook e Instagram de Café La Fauna.</p>
             <p>Argonáutica tiene libros disponibles para leerse de manera gratuita, sin condicionarlo a consumo y aunque tiene unos cientos de libros, cualquier lector habituado a las bibliotecas sabe que eso apenas reúne una muestra de los géneros literarios que existen, por ello aceptamos donaciones de manera permanente. Si tienes libros que ya no te hagan falta puedes hacer que lleguen a otros lectores donándolos a Argonáutica, una sala con espíritu de biblioteca. ¡Bonita forma de mostrarle a otras personas las cosas que nos gustan! No hay donación pequeña, pero si son muchos libros, podemos organizarnos para ir por ellos. Escríbenos a cafelafauna@gmail.com o mejor aún, visítanos y pregunta en la barra, estaremos felices de platicar contigo y ponernos de acuerdo para recoger o recibir los libros.</p>
@@ -166,7 +159,7 @@
 
     <footer class="footer">
         <div class="footer-contenedor">
-            <a class="logo" href="index.html">
+            <a href="index.html">
                 <h1 class="logo__nombre no-margin centrar-texto">Café<span class="texto__bold">LaFauna</span></h1>
             </a><!-- Logo Footer de Café La Fauna -->
             <p>© Copyright 2026 Café La Fauna. Todos los derechos reservados. | Desarrollado por <a href="https://www.linkedin.com/in/jorge-luis-fabila-ceballos/" target="_blank">Jorge Luis Fabila</a>.</p>

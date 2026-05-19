@@ -6,44 +6,54 @@
     <link rel="icon" type="image/png" href="../assets/img/icono.png">
     <link rel="preload" href="../css/normalize.css" as="style">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="../css/styles.css" as="style">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Café La Fauna - Kitchen</title>
 </head>
 
 <button id="botonSubir" title="Ir al Inicio">
-    <svg viewBox="0 0 24 24" width="20" height="20"
-        fill="none" stroke="currentColor"
-        stroke-width="2.5" stroke-linecap="round">
-        <polyline points="18 15 12 9 6 15"></polyline>
-    </svg>
+    <i class="bi bi-chevron-up"></i>
 </button>
 
 <body>
-    <header class="header">
-        <video class="header__video" autoplay muted loop playsinline>
-            <source src="../assets/videos/banner.mp4" type="video/webm">
-        </video>
-        <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="../index.html">
+    <header>
+        <nav class="navbar">
+            <div class="navbar-contenedor">
+                <a href="../index.html">
                     <h1 class="logo__nombre no-margin centrar-texto">Café<span class="texto__bold">LaFauna</span></h1>
-                </a>
-                <nav class="navegacion">
-                    <a href="../menu.html" class="nav__enlace">Menu</a>
-                    <a href="../sala-lectura.html" class="nav__enlace">Sala de Lectura Argonáutica</a>
-                    <a href="../archivo-fauno.html" class="nav__enlace">Archivo Fauno</a>
-                    <a href="#concursos" class="nav__enlace">Concursos de Cuento</a>
-                </nav>
-            </div>
-        </div>
-        <div class="header__texto">
-            <h2 class="no-margin">Comida, Café y Libros</h2>
-            <p class="no-margin">Conversaciones, café y buena compañía. Comida y bebidas para llevar o tomar en el lugar.</p>
-        </div>
+                </a><!-- Logo Nav de Café La Fauna -->
+                <ul class="navegacion">
+                    <a href="../menu.html">Menú</a>
+                    <a href="../sala-lectura.html">Sala de Lectura Argonáutica</a>
+                    <a href="../archivo-fauno.html">Archivo Fauno</a>
+                    <li class="navegacion-dropdown">
+                        <button class="navegacion-dropdown__btn" id="dropDownBtn" aria-expanded="false" aria-haspopup="true">
+                            Concursos de Cuento <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="navegacion-dropdown__opciones" id="dropDownMenu">
+                            <a href="../concursos-cuento/concursoCuento-2025.html"><i class="bi bi-trophy"></i>Concurso de Cuento 2025</a>
+                            <a href="../la-eleccion-del-lector.html"><i class="bi bi-bookmark-star"></i>La Elección del Lector</a>
+                        </div>
+                    </li>
+                </ul><!-- Navegacion para Desktop -->
+                <button class="navegacion-menu" id="navMenuBtn" aria-label="Abrir Menú" aria-expanded="false">
+                    <i class="bi bi-list" id="menuIcono"></i>
+                </button><!-- Icono del Menu (Para Dispositivos Moviles) -->
+            </div><!-- Contenedor del Contenido del Navbar -->
+            <div class="navegacion-movil" id="navMovilMenu">
+                <a href="../menu.html">Menú</a>
+                <a href="../sala-lectura.html">Sala de Lectura Argonáutica</a>
+                <a href="../archivo-fauno.html">Archivo Fauno</a>
+                <div class="navegacion-movil-seccion"></div>
+                <button id="dropdownBtn" aria-expanded="false">
+                    Concursos de Cuento <i class="bi bi-chevron-down dropdown-icono" id="dropDownIcono"></i>
+                </button>
+                <div class="navegacion-movil-dropdown__opciones" id="dropDownMenuMovil">
+                    <a href="../concursos-cuento/concursoCuento-2025.html"><i class="bi bi-trophy"></i>Concurso de Cuento 2025</a>
+                    <a href="../la-eleccion-del-lector.html"><i class="bi bi-bookmark-star"></i>La Elección del Lector</a>
+                </div>
+            </div><!-- Navegacion para Moviles -->
+        </nav>
     </header>
 
     <main class="contenedor">
@@ -73,18 +83,11 @@
     </main><!-- Contenedor de Contenido Principal -->
 
     <footer class="footer">
-        <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="../index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Café<span class="texto__bold">LaFauna</span></h1>
-                </a>
-                <nav class="navegacion">
-                    <a href="../menu.html" class="nav__enlace">Menu</a>
-                    <a href="../sala-lectura.html" class="nav__enlace">Sala de Lectura Argonáutica</a>
-                    <a href="../archivo-fauno.html" class="nav__enlace">Archivo Fauno</a>
-                    <a href="#concursos" class="nav__enlace">Concursos de Cuento</a>
-                </nav>
-            </div>
+        <div class="footer-contenedor">
+            <a href="../index.html">
+                <h1 class="logo__nombre no-margin centrar-texto">Café<span class="texto__bold">LaFauna</span></h1>
+            </a><!-- Logo Footer de Café La Fauna -->
+            <p>© Copyright 2026 Café La Fauna. Todos los derechos reservados. | Desarrollado por <a href="https://www.linkedin.com/in/jorge-luis-fabila-ceballos/" target="_blank">Jorge Luis Fabila</a>.</p>
         </div>
     </footer>
     <script src="../js/main.js"></script>

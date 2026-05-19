@@ -6,29 +6,20 @@
     <link rel="icon" type="image/png" href="assets/img/icono.png">
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" as="style">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
     <title>Café La Fauna - Archivo Fauno</title>
 </head>
 
 <button id="botonSubir" title="Ir al Inicio">
-    <svg viewBox="0 0 24 24" width="20" height="20"
-        fill="none" stroke="currentColor"
-        stroke-width="2.5" stroke-linecap="round">
-        <polyline points="18 15 12 9 6 15"></polyline>
-    </svg>
+    <i class="bi bi-chevron-up"></i>
 </button>
 
 <body>
     <header>
         <nav class="navbar">
             <div class="navbar-contenedor">
-                <a class="logo" href="index.html">
+                <a href="index.html">
                     <h1 class="logo__nombre no-margin centrar-texto">Café<span class="texto__bold">LaFauna</span></h1>
                 </a><!-- Logo Nav de Café La Fauna -->
                 <ul class="navegacion">
@@ -40,8 +31,8 @@
                             Concursos de Cuento <i class="bi bi-chevron-down"></i>
                         </button>
                         <div class="navegacion-dropdown__opciones" id="dropDownMenu">
-                            <a href="#"><i class="bi bi-trophy"></i>Concurso de Cuento 2025</a>
-                            <a href="#"><i class="bi bi-bookmark-star"></i>La Elección del Lector</a>
+                            <a href="concursos-cuento/concursoCuento-2025.html"><i class="bi bi-trophy"></i>Concurso de Cuento 2025</a>
+                            <a href="la-eleccion-del-lector.html"><i class="bi bi-bookmark-star"></i>La Elección del Lector</a>
                         </div>
                     </li>
                 </ul><!-- Navegacion para Desktop -->
@@ -52,14 +43,14 @@
             <div class="navegacion-movil" id="navMovilMenu">
                 <a href="menu.html">Menú</a>
                 <a href="sala-lectura.html">Sala de Lectura Argonáutica</a>
-                <a href="archivo-fauno.html">Archivo Fauno</a>
+                <a href="archivo-fauno.html" class="nav__seleccionado">Archivo Fauno</a>
                 <div class="navegacion-movil-seccion"></div>
                 <button id="dropdownBtn" aria-expanded="false">
                     Concursos de Cuento <i class="bi bi-chevron-down dropdown-icono" id="dropDownIcono"></i>
                 </button>
                 <div class="navegacion-movil-dropdown__opciones" id="dropDownMenuMovil">
-                    <a href="#"><i class="bi bi-trophy"></i>Concurso de Cuento 2025</a>
-                    <a href="#"><i class="bi bi-bookmark-star"></i>La Elección del Lector</a>
+                    <a href="concursos-cuento/concursoCuento-2025.html"><i class="bi bi-trophy"></i>Concurso de Cuento 2025</a>
+                    <a href="la-eleccion-del-lector.html"><i class="bi bi-bookmark-star"></i>La Elección del Lector</a>
                 </div>
             </div><!-- Navegacion para Moviles -->
         </nav>
@@ -70,152 +61,152 @@
         <div class="archivo-fauno">
             <a href="entradas-archivo/entradaArchivo-1.html" class="archivo-entrada">
                 <div class="archivo-entrada__contenedor">
-                    <img src="assets/img/archivo1.webp" class="archivo-entrada__imagen" alt="imagen archivo">
+                    <img src="assets/img/archivo1.webp" class="archivo-entrada__imagen" alt="Imagen Archivo Fauno">
                 </div>
                 <div>
                     <h4 class="no-margin">El Exorcista</h4>
                     <p>"El exorcista", una historia de terror que ha ganado adeptos por la película como por la novela.</p>
-                    <span class="boton boton--primario">Ver Más</span>
+                    <span class="boton boton--secundario">Ver Más</span>
                 </div>
             </a><!-- Archivo 1 -->
             <a href="entradas-archivo/entradaArchivo-2.html" class="archivo-entrada">
                 <div class="archivo-entrada__contenedor">
-                    <img src="assets/img/archivo2.webp" class="archivo-entrada__imagen" alt="imagen archivo">
+                    <img src="assets/img/archivo2.webp" class="archivo-entrada__imagen" alt="Imagen Archivo Fauno">
                 </div>
                 <div>
                     <h4 class="no-margin">La Semilla del Diablo</h4>
                     <p>Un clásico de los sesentas que décadas después, tiene mucho miedo qué ofrecer.</p>
-                    <span class="boton boton--primario">Ver Más</span>
+                    <span class="boton boton--secundario">Ver Más</span>
                 </div>
             </a><!-- Archivo 2 -->
             <a href="entradas-archivo/entradaArchivo-3.html" class="archivo-entrada">
                 <div class="archivo-entrada__contenedor">
-                    <img src="assets/img/archivo3.webp" class="archivo-entrada__imagen" alt="imagen archivo">
+                    <img src="assets/img/archivo3.webp" class="archivo-entrada__imagen" alt="Imagen Archivo Fauno">
                 </div>
                 <div>
                     <h4 class="no-margin">La Vegetariana</h4>
                     <p>Una de las novelas más conocidas de la ganadora del Nobel de Literatura en 2024, Han Kang.</p>
-                    <span class="boton boton--primario">Ver Más</span>
+                    <span class="boton boton--secundario">Ver Más</span>
                 </div>
             </a><!-- Archivo 3 -->
             <a href="entradas-archivo/entradaArchivo-4.html" class="archivo-entrada">
                 <div class="archivo-entrada__contenedor">
-                    <img src="assets/img/archivo4.webp" class="archivo-entrada__imagen" alt="imagen archivo">
+                    <img src="assets/img/archivo4.webp" class="archivo-entrada__imagen" alt="Imagen Archivo Fauno">
                 </div>
                 <div>
                     <h4 class="no-margin">La Profecía</h4>
                     <p>En este texto, Salvador Flores nos comparte una novela que marcó un parteaguas en la literatura de terror.</p>
-                    <span class="boton boton--primario">Ver Más</span>
+                    <span class="boton boton--secundario">Ver Más</span>
                 </div>
             </a><!-- Archivo 4 -->
             <a href="entradas-archivo/entradaArchivo-5.html" class="archivo-entrada">
                 <div class="archivo-entrada__contenedor">
-                    <img src="assets/img/archivo5.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="imagen archivo">
+                    <img src="assets/img/archivo5.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="Imagen Archivo Fauno">
                 </div>
                 <div>
                     <h4 class="no-margin">Sinsonte</h4>
                     <p>Walter Tevis ofrece en Sinsonte un mundo distópico ambientado en Estados Unidos en el siglo XXV.</p>
-                    <span class="boton boton--primario">Ver Más</span>
+                    <span class="boton boton--secundario">Ver Más</span>
                 </div>
             </a><!-- Archivo 5 -->
             <a href="entradas-archivo/entradaArchivo-6.html" class="archivo-entrada">
                 <div class="archivo-entrada__contenedor">
-                    <img src="assets/img/archivo6.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="imagen archivo">
+                    <img src="assets/img/archivo6.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="Imagen Archivo Fauno">
                 </div>
                 <div>
                     <h4 class="no-margin">El Jardinero y la Muerte</h4>
                     <p>En esta obra literaria, Gospodínov escribe la muerte como ese tiempo suspendido en el que el padre aún está, pero ya comienza a irse.</p>
-                    <span class="boton boton--primario">Ver Más</span>
+                    <span class="boton boton--secundario">Ver Más</span>
                 </div>
             </a><!-- Archivo 6 -->
             <a href="entradas-archivo/entradaArchivo-7.html" class="archivo-entrada">
                 <div class="archivo-entrada__contenedor">
-                    <img src="assets/img/archivo7.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="imagen archivo">
+                    <img src="assets/img/archivo7.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="Imagen Archivo Fauno">
                 </div>
                 <div>
                     <h4 class="no-margin">La Campana de Cristal</h4>
                     <p>"La campana de cristal" es la única novela de la poeta Sylvia Plath. Sobre esta obra comenta la lectora Luisa Briones.</p>
-                    <span class="boton boton--primario">Ver Más</span>
+                    <span class="boton boton--secundario">Ver Más</span>
                 </div>
             </a><!-- Archivo 7 -->
             <a href="entradas-archivo/entradaArchivo-8.html" class="archivo-entrada">
                 <div class="archivo-entrada__contenedor">
-                    <img src="assets/img/archivo8.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="imagen archivo">
+                    <img src="assets/img/archivo8.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="Imagen Archivo Fauno">
                 </div>
                 <div>
                     <h4 class="no-margin">Si Fuéramos Animales</h4>
                     <p>Hay libros que ponen en palabras todo aquello que llevamos dentro. Si fuéramos animales, de Wilhelm Genazino, es uno de ellos.</p>
-                    <span class="boton boton--primario">Ver Más</span>
+                    <span class="boton boton--secundario">Ver Más</span>
                 </div>
             </a><!-- Archivo 8 -->
             <a href="entradas-archivo/entradaArchivo-9.html" class="archivo-entrada">
                 <div class="archivo-entrada__contenedor">
-                    <img src="assets/img/archivo9.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="imagen archivo">
+                    <img src="assets/img/archivo9.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="Imagen Archivo Fauno">
                 </div>
                 <div>
                     <h4 class="no-margin">Kitchen</h4>
                     <p>Es la primera novela de Banana Yoshimoto. Narra la historia de Mikage, una joven que queda completamente sola en una casa inmensa, hasta que Yuichi toca a su puerta y le propone ir a vivir con él y con su madre, Eriko, quien tras la muerte de la madre biológica de Yuichi, transiciona en una mujer hermosa y profundamente acogedora.</p>
-                    <span class="boton boton--primario">Ver Más</span>
+                    <span class="boton boton--secundario">Ver Más</span>
                 </div>
             </a><!-- Archivo 9 -->
             <a href="entradas-archivo/entradaArchivo-10.html" class="archivo-entrada">
                 <div class="archivo-entrada__contenedor">
-                    <img src="assets/img/archivo10.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="imagen archivo">
+                    <img src="assets/img/archivo10.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="Imagen Archivo Fauno">
                 </div>
                 <div>
                     <h4 class="no-margin">Fosca</h4>
                     <p>Si disfrutas de personajes complejos, con voces interiores poderosas; de tramas donde lo que ocurre dentro importa tanto como lo que ocurre afuera; y si alguna vez te has sentido excluida social y/o corporalmente, esta novela puede resonarte profundamente.</p>
-                    <span class="boton boton--primario">Ver Más</span>
+                    <span class="boton boton--secundario">Ver Más</span>
                 </div>
             </a><!-- Archivo 10 -->
             <a href="entradas-archivo/entradaArchivo-11.html" class="archivo-entrada">
                 <div class="archivo-entrada__contenedor">
-                    <img src="assets/img/archivo11.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="imagen archivo">
+                    <img src="assets/img/archivo11.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="Imagen Archivo Fauno">
                 </div>
                 <div>
                     <h4 class="no-margin">El Fin del Mundo y un Despiadado País de las Maravillas</h4>
                     <p>Hay historias que funcionan como espejos dobles, donde una se mira desde afuera y al mismo tiempo desde adentro. Esta novela de Murakami, es una de ellas.</p>
-                    <span class="boton boton--primario">Ver Más</span>
+                    <span class="boton boton--secundario">Ver Más</span>
                 </div>
             </a><!-- Archivo 11 -->
             <a href="entradas-archivo/entradaArchivo-12.html" class="archivo-entrada">
                 <div class="archivo-entrada__contenedor">
-                    <img src="assets/img/archivo12.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="imagen archivo">
+                    <img src="assets/img/archivo12.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="Imagen Archivo Fauno">
                 </div>
                 <div>
                     <h4 class="no-margin">El Gran Dios Bestia y Otros Cuentos de Terror (La Elección del Lector)</h4>
                     <p>Sandra Arias es la lectora que en esta cuarta edición del concurso de cuento corto de terror participa en "La elección del lector", que consiste en elegir un cuento que, adicional al ganador "El gran dios bestia", le resulte interesante. Su elección fue el cuento "Sueño colectivo" de Emmanuel Lagunas.</p>
-                    <span class="boton boton--primario">Ver Más</span>
+                    <span class="boton boton--secundario">Ver Más</span>
                 </div>
             </a><!-- Archivo 12 -->
             <a href="entradas-archivo/entradaArchivo-13.html" class="archivo-entrada">
                 <div class="archivo-entrada__contenedor">
-                    <img src="assets/img/archivo13.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="imagen archivo">
+                    <img src="assets/img/archivo13.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="Imagen Archivo Fauno">
                 </div>
                 <div>
                     <h4 class="no-margin">El Torito y Otros Cuentos de Terror (La Elección del Lector)</h4>
                     <p>En esta edición el cuento ganador fue "El Torito", de Adriana Letechipía, adicional a ello, tomando en cuenta a los lectores, creamos esta sección en la que un lector asiduo elige un cuento distinto al ganador como "la elección del lector", que este concurso corresponde al cuento "Los de afuera" de Edith Esquivel Eguiguren.</p>
-                    <span class="boton boton--primario">Ver Más</span>
+                    <span class="boton boton--secundario">Ver Más</span>
                 </div>
             </a><!-- Archivo 13 -->
             <a href="entradas-archivo/entradaArchivo-14.html" class="archivo-entrada">
                 <div class="archivo-entrada__contenedor">
-                    <img src="assets/img/archivo14.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="imagen archivo">
+                    <img src="assets/img/archivo14.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="Imagen Archivo Fauno">
                 </div>
                 <div>
                     <h4 class="no-margin">El Ciclo y Otros Cuentos de Terror (La Elección del Lector)</h4>
                     <p>En esta edición el cuento ganador fue "El ciclo", de Ben durán, adicional a ello, tomando en cuenta a los lectores, creamos esta sección en la que lectores asiduos de Argonáutica, la sala de lectura de Café La Fauna, eligen un cuento distinto al ganador como "la elección del lector". En la segunda edición del concurso corresponde al cuento "En el armario" de Jazmín Zarco Uribe.</p>
-                    <span class="boton boton--primario">Ver Más</span>
+                    <span class="boton boton--secundario">Ver Más</span>
                 </div>
             </a><!-- Archivo 14 -->
             <a href="entradas-archivo/entradaArchivo-15.html" class="archivo-entrada">
                 <div class="archivo-entrada__contenedor">
-                    <img src="assets/img/archivo15.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="imagen archivo">
+                    <img src="assets/img/archivo15.webp" class="archivo-entrada__imagen" loading="lazy" decoding="async" alt="Imagen Archivo Fauno">
                 </div>
                 <div>
                     <h4 class="no-margin">Registro Sonoro y Otros Cuentos de Terror (La Elección del Lector)</h4>
                     <p>Tomando en cuenta que los lectores pueden tener otra opinión, creamos esta sección en la que lectores asiduos de Argonáutica, la sala de lectura de Café La Fauna, elige un cuento distinto al ganador como “la elección del lector”. Este primer concurso corresponde al cuento “Bullicio” de Lorenza González Ortega.</p>
-                    <span class="boton boton--primario">Ver Más</span>
+                    <span class="boton boton--secundario">Ver Más</span>
                 </div>
             </a><!-- Archivo 15 -->
         </div><!-- Contenedor de Archivos -->
@@ -223,7 +214,7 @@
 
     <footer class="footer">
         <div class="footer-contenedor">
-            <a class="logo" href="index.html">
+            <a href="index.html">
                 <h1 class="logo__nombre no-margin centrar-texto">Café<span class="texto__bold">LaFauna</span></h1>
             </a><!-- Logo Footer de Café La Fauna -->
             <p>© Copyright 2026 Café La Fauna. Todos los derechos reservados. | Desarrollado por <a href="https://www.linkedin.com/in/jorge-luis-fabila-ceballos/" target="_blank">Jorge Luis Fabila</a>.</p>
