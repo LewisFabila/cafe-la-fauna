@@ -24,7 +24,7 @@
                 </a><!-- Logo Nav de Café La Fauna -->
                 <ul class="navegacion">
                     <a href="menu.html" class="nav__seleccionado">Menú</a>
-                    <a href="sala-lectura.html">Sala de Lectura Argonáutica</a>
+                    <a href="sala-de-lectura-argonautica.html">Sala de Lectura Argonáutica</a>
                     <a href="archivo-fauno.html">Archivo Fauno</a>
                     <li class="navegacion-dropdown">
                         <button class="navegacion-dropdown__btn" id="dropDownBtn" aria-expanded="false" aria-haspopup="true">
@@ -32,6 +32,7 @@
                         </button>
                         <div class="navegacion-dropdown__opciones" id="dropDownMenu">
                             <a href="concursos-cuento/concursoCuento-2025.html"><i class="bi bi-trophy"></i>Concurso de Cuento 2025</a>
+                            <a href="concursos-cuento/concursoCuento-2024.html"><i class="bi bi-trophy"></i>Concurso de Cuento 2024</a>
                             <a href="la-eleccion-del-lector.html"><i class="bi bi-bookmark-star"></i>La Elección del Lector</a>
                         </div>
                     </li>
@@ -42,7 +43,7 @@
             </div><!-- Contenedor del Contenido del Navbar -->
             <div class="navegacion-movil" id="navMovilMenu">
                 <a href="menu.html" class="nav__seleccionado">Menú</a>
-                <a href="sala-lectura.html">Sala de Lectura Argonáutica</a>
+                <a href="sala-de-lectura-argonautica.html">Sala de Lectura Argonáutica</a>
                 <a href="archivo-fauno.html">Archivo Fauno</a>
                 <div class="navegacion-movil-seccion"></div>
                 <button id="dropdownBtn" aria-expanded="false">
@@ -50,6 +51,7 @@
                 </button>
                 <div class="navegacion-movil-dropdown__opciones" id="dropDownMenuMovil">
                     <a href="concursos-cuento/concursoCuento-2025.html"><i class="bi bi-trophy"></i>Concurso de Cuento 2025</a>
+                    <a href="concursos-cuento/concursoCuento-2024.html"><i class="bi bi-trophy"></i>Concurso de Cuento 2024</a>
                     <a href="la-eleccion-del-lector.html"><i class="bi bi-bookmark-star"></i>La Elección del Lector</a>
                 </div>
             </div><!-- Navegacion para Moviles -->
@@ -86,75 +88,75 @@
                 <h2 class="no-margin">Bebidas Calientes</h2><br>
                 <h4 class="no-margin">Café</h4>
                 <p class="widget-producto__label">Ligero:
-                    <span class="widget-producto__texto">$39</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-ligero"></span>
                 </p><!-- Bebida Caliente 1 -->
                 <p class="widget-producto__label">De la casa:
-                    <span class="widget-producto__texto">$43</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-deLaCasa"></span>
                 </p><!-- Bebida Caliente 2 -->
                 <p class="widget-producto__label">Gorila:
-                    <span class="widget-producto__texto">$55</span>
-                    <span class="widget-producto__subtexto">(*) Pídelo helado por $12 más.</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-gorila"></span>
+                    <span class="widget-producto__subtexto">(*) Pídelo helado por <span id="precio-extras-cafePideloHelado"></span> más.</span>
                 </p><!-- Bebida Caliente 3 -->
                 <p class="widget-producto__label">Espresso:
-                    <span class="widget-producto__texto">$39</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-espresso"></span>
                 </p><!-- Bebida Caliente 4 -->
                 <p class="widget-producto__label">Espresso cortado:
-                    <span class="widget-producto__texto">$45</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-espressoCortado"></span>
                 </p><!-- Bebida Caliente 5 -->
                 <p class="widget-producto__label">Capuchino. 200 ml:
-                    <span class="widget-producto__texto">$42</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-capuchino"></span>
                 </p><!-- Bebida Caliente 6 -->
                 <p class="widget-producto__label">Capuchino grande. 400 ml:
-                    <span class="widget-producto__texto">$75</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-capuchinoGrande"></span>
                 </p><!-- Bebida Caliente 7 -->
-                <p class="widget-producto__label">Flat white:
-                    <span class="widget-producto__texto">$55</span>
+                <p class="widget-producto__label">Flat White:
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-flatWhite"></span>
                 </p><!-- Bebida Caliente 8 -->
                 <p class="widget-producto__label">Espresso Tonic:
-                    <span class="widget-producto__texto">$65</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-espressoTonic"></span>
                 </p><!-- Bebida Caliente 9 -->
                 <p class="widget-producto__label">Latte Clásico:
-                    <span class="widget-producto__texto">$48</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-latteClasico"></span>
                 </p><!-- Bebida Caliente 10 -->
                 <p class="widget-producto__label">Latte Matcha:
-                    <span class="widget-producto__texto">$70</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-latteMatcha"></span>
                 </p><!-- Bebida Caliente 11 -->
                 <p class="widget-producto__label">Latte Chai Wala:
-                    <span class="widget-producto__texto">$68</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-latteChaiWala"></span>
                 </p><!-- Bebida Caliente 12 -->
                 <p class="widget-producto__label">Latte Chai de Circe:
-                    <span class="widget-producto__texto">$60</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-latteChaiCirce"></span>
                 </p><!-- Bebida Caliente 13 -->
                 <p class="widget-producto__label">Latte Moka:
-                    <span class="widget-producto__texto">$65</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-latteMoka"></span>
                 </p><!-- Bebida Caliente 14 -->
                 <p class="widget-producto__label">Latte Taro:
-                    <span class="widget-producto__texto">$65</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-latteTaro"></span>
                 </p><!-- Bebida Caliente 15 -->
                 <p class="widget-producto__label">Yin-yang. Leche acremada con café en la misma proporción :
-                    <span class="widget-producto__texto">$50</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-yinYang"></span>
                 </p><!-- Bebida Caliente 16 -->
-                <p class="widget-producto__label">Chocolate :
-                    <span class="widget-producto__texto">$57</span>
-                    <span class="widget-producto__subtexto">(*) Pídelo frío por $12 más.</span>
+                <p class="widget-producto__label">Chocolate:
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-chocolate"></span>
+                    <span class="widget-producto__subtexto">(*) Pídelo frío por <span id="precio-extras-pideloFrio"></span> más.</span>
                 </p><!-- Bebida Caliente 17 -->
                 <p class="widget-producto__label">Chocolate de agua. Molienda de cacao natural con agua :
-                    <span class="widget-producto__texto">$58</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-chocolateAgua"></span>
                 </p><!-- Bebida Caliente 18 -->
                 <p class="widget-producto__label">Chocolate artesanal. Cacao molido artesanalmente con leche :
-                    <span class="widget-producto__texto">$60</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-chocolateArtesanal"></span>
                 </p><!-- Bebida Caliente 19 -->
                 <p class="widget-producto__label">Capuchino enclaustrado. Con rompope :
-                    <span class="widget-producto__texto">$58</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-capuchinoEnclaustrado"></span>
                 </p><!-- Bebida Caliente 20 -->
                 <p class="widget-producto__label">Affogato. Bola de helado sobre 1 espresso :
-                    <span class="widget-producto__texto">$64</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-affogato"></span>
                 </p><!-- Bebida Caliente 21 -->
                 <p class="widget-producto__label">Café con leche. Americano con leche :
-                    <span class="widget-producto__texto">$50</span>
+                    <span class="widget-producto__texto" id="precio-bebidaCaliente-cafeLeche"></span>
                 </p><!-- Bebida Caliente 22 -->
-                <p class="widget-producto__subtexto">(*) Extra de leche entera o deslactosada $13.</p>
-                <p class="widget-producto__subtexto">(*) Cambia a leche de soya o almendra por $13 más.</p>
+                <p class="widget-producto__subtexto">(*) Extra de leche entera o deslactosada <span id="precio-extras-extraLeche"></span>.</p>
+                <p class="widget-producto__subtexto">(*) Cambia a leche de soya o almendra por <span id="precio-extras-cambioLeche"></span> más.</p>
             </div>
         </section><!-- Producto 1 (Bebidas Calientes) -->
 
@@ -165,20 +167,20 @@
             <div class="widget-producto__informacion">
                 <h2 class="no-margin">Infusiones y Té</h2>
                 <p class="widget-producto__label">Té chai de Circe. Mezcla de especias y hierbas aromáticas:
-                    <span class="widget-producto__texto">$55</span>
+                    <span class="widget-producto__texto" id="precio-te-chaiCirce"></span>
                 </p><!-- Té 1 -->
                 <p class="widget-producto__label">Té chai Wala:
-                    <span class="widget-producto__texto">$59</span>
+                    <span class="widget-producto__texto" id="precio-te-chaiWala"></span>
                 </p><!-- Té 2 -->
                 <p class="widget-producto__label">Manzanilla. Clásico reconfortante:
-                    <span class="widget-producto__texto">$29</span>
+                    <span class="widget-producto__texto" id="precio-infusion-manzanilla"></span>
                 </p><!-- Té 3 -->
                 <p class="widget-producto__label">Fresa y vainilla:
-                    <span class="widget-producto__texto">$33</span>
+                    <span class="widget-producto__texto" id="precio-infusion-fresaVainilla"></span>
                 </p><!-- Té 4 -->
                 <p class="widget-producto__label">Limón:
-                    <span class="widget-producto__texto">$30</span>
-                    <span class="widget-producto__subtexto">(*) Pídelo helado por $12 más.</span>
+                    <span class="widget-producto__texto" id="precio-infusion-limon"></span>
+                    <span class="widget-producto__subtexto">(*) Pídelo helado por <span id="precio-extras-infusionPideloHelado"></span> más.</span>
                 </p><!-- Té 5 -->
             </div>
         </section><!-- Producto 2 (Infusiones y Té) -->
@@ -190,65 +192,65 @@
             <div class="widget-producto__informacion">
                 <h2 class="no-margin">Bebidas Frías</h2>
                 <p class="widget-producto__label">Malteada. De chocolate, vainilla o fresa:
-                    <span class="widget-producto__texto">$79</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-malteada"></span>
                 </p><!-- Bebida Fría 1 -->
                 <p class="widget-producto__label">Frapé de café. Con leche entera o deslactosada:
-                    <span class="widget-producto__texto">$73</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-frapeCafe"></span>
                 </p><!-- Bebida Fría 2 -->
                 <p class="widget-producto__label">Frapé de té con leche (Opciones: Matcha / Chai Wala / Chai de Circe / Taro):
-                    <span class="widget-producto__texto">$79</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-frapeTeLeche"></span>
                 </p><!-- Bebida Fría 3 -->
                 <p class="widget-producto__label">Frappumokachino. Frapé de café con chocolate:
-                    <span class="widget-producto__texto">$80</span>
-                    <span class="widget-producto__subtexto">(*) Pídelo con una bola de helado por $15 más.</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-frappumokachino"></span>
+                    <span class="widget-producto__subtexto">(*) Pídelo con una bola de helado por <span id="precio-extras-bolaHelado"></span> más.</span>
                 </p><!-- Bebida Fría 4 -->
                 <p class="widget-producto__label">Afrodita. 450 ml. (Opciones: Café / Matcha / Chai Wala / Chai de Circe / Taro):
-                    <span class="widget-producto__texto">$74</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-afrodita"></span>
                 </p><!-- Bebida Fría 5 -->
                 <p class="widget-producto__label">Pepinolis. Limonada con trozos de pepino y hielo:
-                    <span class="widget-producto__texto">$39</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-pepinolis"></span>
                 </p><!-- Bebida Fría 6 -->
                 <p class="widget-producto__label">Media luna. Rodajas de manzana en una fresca limonada con hielos:
-                    <span class="widget-producto__texto">$45</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-mediaLuna"></span>
                 </p><!-- Bebida Fría 7 -->
                 <p class="widget-producto__label">Beso de gitana. Té de fresa helado con cubitos de mango y trocitos de yerbabuena:
-                    <span class="widget-producto__texto">$58</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-besoGitana"></span>
                 </p><!-- Bebida Fría 8 -->
                 <p class="widget-producto__label">Rosana. Miel de fresa natural con soda de limón:
-                    <span class="widget-producto__texto">$52</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-rosana"></span>
                 </p><!-- Bebida Fría 9 -->
                 <p class="widget-producto__label">Yerbamiel. Frapé de yerbabuena con limón, miel de guayaba y chile Tajín:
-                    <span class="widget-producto__texto">$69</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-yerbamiel"></span>
                 </p><!-- Bebida Fría 10 -->
                 <p class="widget-producto__label">Mandarinada o mangada polar. Con hielo frapeado:
-                    <span class="widget-producto__texto">$68</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-mandarinadaMangadaPolar"></span>
                 </p><!-- Bebida Fría 11 -->
                 <p class="widget-producto__label">Limonada polar. Con hielo frapeado, mezclado con hojas de yerbabuena:
-                    <span class="widget-producto__texto">$55</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-limonadaPolar"></span>
                 </p><!-- Bebida Fría 12 -->
                 <p class="widget-producto__label">Pepinada polar. Con limón y hielo frapeado:
-                    <span class="widget-producto__texto">$55</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-pepinadaPolar"></span>
                 </p><!-- Bebida Fría 13 -->
                 <p class="widget-producto__label">Piñada polar. Con hielo frapeado:
-                    <span class="widget-producto__texto">$57</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-pinadaPolar"></span>
                 </p><!-- Bebida Fría 14 -->
                 <p class="widget-producto__label">Naranjada o limonada:
-                    <span class="widget-producto__texto">$46</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-naranjadaLimonada"></span>
                 </p><!-- Bebida Fría 15 -->
                 <p class="widget-producto__label">Rusa. Jugo de limón con agua mineral en un tarro escarchado con sal:
-                    <span class="widget-producto__texto">$44</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-rusa"></span>
                 </p><!-- Bebida Fría 16 -->
                 <p class="widget-producto__label">Soda italiana. Bebida fresca hecha con pulpa de fruta natural y agua mineral (fresa, guayaba, maracuyá y tamarindo):
-                    <span class="widget-producto__texto">$59</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-sodaItaliana"></span>
                 </p><!-- Bebida Fría 17 -->
                 <p class="widget-producto__label">Vaso de leche:
-                    <span class="widget-producto__texto">$30</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-vasoLeche"></span>
                 </p><!-- Bebida Fría 18 -->
                 <p class="widget-producto__label">Jugo de naranja grande. 310 ml:
-                    <span class="widget-producto__texto">$49</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-jugoNaranjaGrande"></span>
                 </p><!-- Bebida Fría 19 -->
                 <p class="widget-producto__label">Jugo verde. 480 ml:
-                    <span class="widget-producto__texto">$63</span>
+                    <span class="widget-producto__texto" id="precio-bebidaFria-jugoVerde"></span>
                 </p><!-- Bebida Fría 20 -->
             </div>
         </section><!-- Producto 3 (Bebidas Frías) -->
@@ -260,19 +262,19 @@
             <div class="widget-producto__informacion">
                 <h2 class="no-margin">Refresco</h2>
                 <p class="widget-producto__label">Coca Cola Roja:
-                    <span class="widget-producto__texto">$39</span>
+                    <span class="widget-producto__texto" id="precio-refresco-cocaColaRoja"></span>
                 </p><!-- Refresco 1 -->
                 <p class="widget-producto__label">Coca Cola Light:
-                    <span class="widget-producto__texto">$39</span>
+                    <span class="widget-producto__texto" id="precio-refresco-cocaColaLight"></span>
                 </p><!-- Refresco 2 -->
                 <p class="widget-producto__label">Agua mineral:
-                    <span class="widget-producto__texto">$39</span>
+                    <span class="widget-producto__texto" id="precio-refresco-aguaMineral"></span>
                 </p><!-- Refresco 3 -->
                 <p class="widget-producto__label">Refresco de sabor:
-                    <span class="widget-producto__texto">$39</span>
+                    <span class="widget-producto__texto" id="precio-refresco-refrescoSabor"></span>
                 </p><!-- Refresco 4 -->
                 <p class="widget-producto__label">Botella de agua:
-                    <span class="widget-producto__texto">$25</span>
+                    <span class="widget-producto__texto" id="precio-refresco-botellaAgua"></span>
                 </p><!-- Refresco 5 -->
             </div>
         </section><!-- Producto 4 (Refresco) -->
@@ -283,7 +285,7 @@
             </div>
             <div class="widget-producto__informacion">
                 <h2 class="no-margin">Tisanas</h2>
-                <h4 class="no-margin">(dos tazas). $55</h4>
+                <h4 class="no-margin">(dos tazas). <span id="precio-tisanas"></span></h4>
                 <p class="widget-producto__label">Otoñal.
                     <span class="widget-producto__texto">Flor de jamaica, baya de sauco, escaramujo, fresa, maracuyá, kiwi, pétalo de rosa, frambuesa, manzana, pétalo de girasol.</span>
                 </p><!-- Tisana 1 -->
@@ -302,7 +304,7 @@
                 <p class="widget-producto__label">Pasión naranja.
                     <span class="widget-producto__texto">Cáscara de naranja, flor de jamaica, manzana, baya de sauco, escaramujo, papaya, mora azul, maracuyá, grosella negra.</span>
                 </p><!-- Tisana 6 -->
-                <span class="widget-producto__subtexto">(*) Pídela fría o frapeada por $12 más.</span>
+                <span class="widget-producto__subtexto">(*) Pídela fría o frapeada por <span id="precio-extras-friaFrapeada"></span> más.</span>
             </div>
         </section><!-- Producto 5 (Tisanas) -->
 
@@ -315,103 +317,104 @@
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Chilaquiles</h4>
                     <p class="widget-producto__label no-margin">Verdes o rojos con crema, queso, cebolla, acompañados de frijoles de olla:
-                        <span class="widget-producto__texto">$97</span>
+                        <span class="widget-producto__texto" id="precio-tradicional-chilaquiles"></span>
                     </p>
                     <p class="widget-producto__label no-margin">Con huevo:
-                        <span class="widget-producto__texto">$102</span>
+                        <span class="widget-producto__texto" id="precio-tradicional-chilaquilesHuevo"></span>
                     </p>
                     <p class="widget-producto__label no-margin">Con pollo:
-                        <span class="widget-producto__texto">$113</span>
+                        <span class="widget-producto__texto" id="precio-tradicional-chilaquilesPollo"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = $188</span>
+                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = <span id="precio-extras-desayunoChilaquiles"></span></span>
                 </div><!-- Tradicional 1 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Enchiladas</h4>
                     <p class="widget-producto__label no-margin">Verdes o rojas rellenas de pollo o queso panela, cubiertas de crema, queso y un toque de aguacate, acompañadas de frijoles de olla:
-                        <span class="widget-producto__texto">$110</span>
+                        <span class="widget-producto__texto" id="precio-tradicional-enchiladas"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = $190</span>
+                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = <span id="precio-extras-desayunoEnchiladas"></span></span>
                 </div><!-- Tradicional 2 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Molletes</h4>
                     <p class="widget-producto__label no-margin">Preparados al horno con queso Oaxaca, frijoles de olla machacados y salsa de chile serrano:
-                        <span class="widget-producto__texto">$76</span>
+                        <span class="widget-producto__texto" id="precio-tradicional-molletes"></span>
                     </p>
                     <p class="widget-producto__label no-margin">Preparados con chorizo o jamón:
-                        <span class="widget-producto__texto">$95</span>
+                        <span class="widget-producto__texto" id="precio-tradicional-molletesChorizoJamon"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Cambia a queso manchego por $20 más.</span>
+                    <span class="widget-producto__subtexto">(*) Cambia a queso manchego por <span id="precio-extras-quesoManchegoMolletes"></span> más.</span>
                 </div><!-- Tradicional 3 -->
                 <span class="widget-producto__subtexto">(*) Los platillos marcados con (D) sólo se preparan de la apertura a las 2 de la tarde.</span>
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">(D) Desayuno del conejo de la Luna</h4>
                     <p class="widget-producto__label no-margin">Crepa de claras de huevo rellena calabaza, pimiento rojo, zanahoria y cebolla salteadas con un toque de finas hierbas acompañadas de frijoles de olla espolvoreados con queso fresco y triangulitos de pan de 12 granos:
-                        <span class="widget-producto__texto">$100</span>
+                        <span class="widget-producto__texto" id="precio-tradicional-desayunoConejoLuna"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = $180</span>
+                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = <span id="precio-extras-desayunoConejoLuna"></span></span>
                 </div><!-- Tradicional 4 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">(D) Desayuno de media mañana</h4>
                     <p class="widget-producto__label no-margin">Crepa de claras de huevo rellena de chorizo, aguacate y frijoles machacados con un toque de humus, acompañada de pan pita tostado y salsa de chile serrano:
-                        <span class="widget-producto__texto">$115</span>
+                        <span class="widget-producto__texto" id="precio-tradicional-desayunoMediaManana"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = $193</span>
+                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = <span id="precio-extras-desayunoMediaManana"></span></span>
                 </div><!-- Tradicional 5 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">(D) Crepas de huevo</h4>
                     <p class="widget-producto__label no-margin">Dos crepas de huevo con espinaca rellenas de queso panela, bañadas con salsa verde, acompañadas de frijoles de olla, espolvoreados de queso y triángulos de pan ligeramente tostado:
-                        <span class="widget-producto__texto">$102</span>
+                        <span class="widget-producto__texto" id="precio-tradicional-crepasHuevo"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = $179</span>
+                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = <span id="precio-extras-desayunoCrepasHuevo"></span></span>
                 </div><!-- Tradicional 6 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">(D) Desayuno de Clara (*)</h4>
                     <p class="widget-producto__label no-margin">Rollo de claras de huevo relleno de espinaca, zanahoria, pimiento rojo, queso panela y aguacate, acompañadas de salsa de chile serrano y frijoles de olla espolvoreados con queso:
-                        <span class="widget-producto__texto">$125</span>
+                        <span class="widget-producto__texto" id="precio-tradicional-desayunoClara"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = $198</span>
+                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = <span id="precio-extras-desayunoClara"></span></span>
                 </div><!-- Tradicional 7 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">(D) Huevos con jamón, a la mexicana o con chorizo</h4>
                     <p class="widget-producto__label no-margin">Acompañados de salsa de chile serrano o habanero y frijoles de olla espolvoreados de queso:
-                        <span class="widget-producto__texto">$90</span>
+                        <span class="widget-producto__texto" id="precio-tradicional-huevosJamonMexicanaChorizo"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = $164</span>
+                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = <span id="precio-extras-desayunoHuevos"></span></span>
                 </div><!-- Tradicional 8 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">(D) Huevos divorciados o rancheros</h4>
                     <p class="widget-producto__label no-margin">Sobre tortilla frita, bañados con salsa:
-                        <span class="widget-producto__texto">$105</span>
+                        <span class="widget-producto__texto" id="precio-tradicional-huevosDivorciadosRancheros"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = $178</span>
+                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = <span id="precio-extras-desayunoHuevosDivorciados"></span></span>
                 </div><!-- Tradicional 9 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">(D) Amanecer (*)</h4>
                     <p class="widget-producto__label no-margin">Rollo de huevo relleno de espinaca, calabaza, jitomate y queso Philadelphia acompañado de fruta de temporada y pan tostado:
-                        <span class="widget-producto__texto">$117</span>
+                        <span class="widget-producto__texto" id="precio-tradicional-amanecer"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = $195</span>
-                    <span class="widget-producto__subtexto">(*) Cambia a queso manchego por $20 más.</span>
+                    <span class="widget-producto__subtexto">(*) Paquete de desayuno: + café + jugo de naranja = <span id="precio-extras-desayunoAmanecer"></span></span>
+                    <br><span class="widget-producto__subtexto">(*) Cambia a queso manchego por <span id="precio-extras-quesoManchegoAmanecer"></span> más.</span>
                 </div><!-- Tradicional 10 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">(D) Plato de papaya</h4>
-                    <p class="widget-producto__label no-margin">Con limón y amaranto.
-                        <span class="widget-producto__texto">Chico: $48</span>
+                    <p class="widget-producto__label no-margin">Con limón y amaranto.</p>
+                    <p class="widget-producto__label no-margin">Chico: 
+                        <span class="widget-producto__texto" id="precio-tradicional-platoPapayaChico"></span>
                     </p>
-                    <p class="widget-producto__label no-margin">
-                        <span class="widget-producto__texto">Grande: $54</span>
+                    <p class="widget-producto__label no-margin">Grande: 
+                        <span class="widget-producto__texto" id="precio-tradicional-platoPapayaGrande"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Agrega yogurt griego por $25 más.</span>
+                    <span class="widget-producto__subtexto">(*) Agrega yogurt griego por <span id="precio-extras-yogurtPlatoPapaya"></span> más.</span>
                 </div><!-- Tradicional 11 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">(D) Plato de fruta mixto</h4>
-                    <p class="widget-producto__label no-margin">Cubitos de papaya, rodajas de plátano y manzana, espolvoreados con amaranto y limón.
-                        <span class="widget-producto__texto">$59</span>
+                    <p class="widget-producto__label no-margin">Cubitos de papaya, rodajas de plátano y manzana, espolvoreados con amaranto y limón:
+                        <span class="widget-producto__texto" id="precio-tradicional-platoFrutaMixto"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Agrega yogurt griego por $25 más.</span>
+                    <span class="widget-producto__subtexto">(*) Agrega yogurt griego por <span id="precio-extras-yogurtPlatoFruta"></span> más.</span>
                 </div><!-- Tradicional 12 -->
-                <p class="widget-producto__subtexto">(*) Huevo adicional: $17</p>
-                <p class="widget-producto__subtexto">(*) Pollo adicional: $33</p>
+                <p class="widget-producto__subtexto">(*) Huevo adicional: <span id="precio-extras-extraHuevo"></span></p>
+                <p class="widget-producto__subtexto">(*) Pollo adicional: <span id="precio-extras-extraPollo"></span></p>
             </div>
         </section><!-- Producto 6 (Lo Tradicional)-->
 
@@ -421,75 +424,75 @@
             </div>
             <div class="widget-producto__informacion">
                 <h2 class="no-margin">Hamburguesas</h2>
-                <p class="widget-producto__subtexto">(*) Cambia a queso manchego por $20 más.</p>
+                <p class="widget-producto__subtexto">(*) Cambia a queso manchego por <span id="precio-extras-quesoManchegoHamburguesas"></span> más.</p>
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Vasconcelos</h4>
                     <p class="widget-producto__label no-margin">Hamburguesa con queso oaxaca derretido y carne de res, pimientos dulces, espinaca y calabaza asada:
-                        <span class="widget-producto__texto">$103</span>
+                        <span class="widget-producto__texto" id="precio-hamburguesa-vasconcelos"></span>
                     </p>
                 </div><!-- Hamburguesa 1 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Carrie</h4>
                     <p class="widget-producto__label no-margin">Hamburguesa de carne de res con queso tipo americano, betabel y un toque de habanero. Con jitomate, espinaca y cebolla, acompañada de chips de pan pita y aderezo ranch:
-                        <span class="widget-producto__texto">$126</span>
+                        <span class="widget-producto__texto" id="precio-hamburguesa-carrie"></span>
                     </p>
                 </div><!-- Hamburguesa 2 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Flamígera</h4>
                     <p class="widget-producto__label no-margin">Hamburguesa de carne de res con queso tipo americano, pimientos dulces y un toque de habanero. Con jitomate, espinaca y cebolla, acompañada de chips de pan pita y aderezo ranch:
-                        <span class="widget-producto__texto">$122</span>
+                        <span class="widget-producto__texto" id="precio-hamburguesa-flamigera"></span>
                     </p>
                 </div><!-- Hamburguesa 3 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Hamburguesa sin pan</h4>
                     <p class="widget-producto__label no-margin">Carne de res con queso tipo americano derretido, jitomate, lechuga, cebolla, hummus y chiles en vinagre:
-                        <span class="widget-producto__texto">$94</span>
+                        <span class="widget-producto__texto" id="precio-hamburguesa-sinPan"></span>
                     </p>
                 </div><!-- Hamburguesa 4 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Clásica</h4>
                     <p class="widget-producto__label no-margin">Carne de res con queso tipo americano derretido, jitomate, lechuga, cebolla y chiles en vinagre:
-                        <span class="widget-producto__texto">$100</span>
+                        <span class="widget-producto__texto" id="precio-hamburguesa-clasica"></span>
                     </p>
                 </div><!-- Hamburguesa 5 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Ávalon</h4>
                     <p class="widget-producto__label no-margin">Carne de res con queso tipo americano derretido, bañada con aderezo griego de pepino, con rodajas de jitomate, cebolla y acompañamiento de chiles en vinagre:
-                        <span class="widget-producto__texto">$113</span>
+                        <span class="widget-producto__texto" id="precio-hamburguesa-avalon"></span>
                     </p>
                 </div><!-- Hamburguesa 6 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Hawaiana</h4>
                     <p class="widget-producto__label no-margin">Carne de res con queso tipo americano derretido, jitomate, lechuga, cebolla, jamón, piña y chiles en vinagre:
-                        <span class="widget-producto__texto">$116</span>
+                        <span class="widget-producto__texto" id="precio-hamburguesa-hawaiana"></span>
                     </p>
                 </div><!-- Hamburguesa 7 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Meztli</h4>
                     <p class="widget-producto__label no-margin">Carne de res con queso tipo americano derretido, jitomate, cebolla, chorizo, medio aguacate y lechuga:
-                        <span class="widget-producto__texto">$135</span>
+                        <span class="widget-producto__texto" id="precio-hamburguesa-meztli"></span>
                     </p>
                 </div><!-- Hamburguesa 8 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Medieval (*)</h4>
                     <p class="widget-producto__label no-margin">Doble carne de res con queso tipo americano derretido, tocino, 1 huevo estrellado, jitomate, cebolla, lechuga y chiles en vinagre:
-                        <span class="widget-producto__texto">$176</span>
+                        <span class="widget-producto__texto" id="precio-hamburguesa-medieval"></span>
                     </p>
                 </div><!-- Hamburguesa 9 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Ceres</h4>
                     <p class="widget-producto__label no-margin">Hamburguesa vegetariana de lenteja con rodajas de jitomate, pepino, cebolla, lechuga y chiles en vinagre:
-                        <span class="widget-producto__texto">$98</span>
+                        <span class="widget-producto__texto" id="precio-hamburguesa-ceres"></span>
                     </p>
                 </div><!-- Hamburguesa 10 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Hamburguesa de caricatura</h4>
                     <p class="widget-producto__label no-margin">Carne de res con queso tipo americano derretido:
-                        <span class="widget-producto__texto">$74</span>
+                        <span class="widget-producto__texto" id="precio-hamburguesa-caricatura"></span>
                     </p>
                 </div><!-- Hamburguesa 11 -->
-                <p class="widget-producto__subtexto">(*) Ensalada adicional: $28</p>
-                <p class="widget-producto__subtexto">(*) Papas adicionales: $31</p>
+                <p class="widget-producto__subtexto">(*) Ensalada adicional: <span id="precio-extras-extraEnsaladaHamburguesas"></span></p>
+                <p class="widget-producto__subtexto">(*) Papas adicionales: <span id="precio-extras-extraPapasHamburguesas"></span></p>
                 <p class="widget-producto__subtexto">(*) Todas nuestras hamburguesas tienen mayonesa.</p>
             </div>
         </section><!-- Producto 7 (Hamburguesas) -->
@@ -503,49 +506,49 @@
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Emparedado de pollo Osha</h4>
                     <p class="widget-producto__label no-margin">Pollo deshebrado, rodajas de jitomate, lechuga, rajas en vinagre y mayonesa, con pan de 12 granos tostado:
-                        <span class="widget-producto__texto">$71</span>
+                        <span class="widget-producto__texto" id="precio-emparedado-polloOsha"></span>
                     </p>
                 </div><!-- Emparedado 1 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Emparedado Tiki</h4>
                     <p class="widget-producto__label no-margin">Dorado con mantequilla de finas hierbas, relleno de jamón, piña y queso tipo americano:
-                        <span class="widget-producto__texto">$77</span>
+                        <span class="widget-producto__texto" id="precio-emparedado-tiki"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Cambia a queso manchego por $20 más.</span>
+                    <span class="widget-producto__subtexto">(*) Cambia a queso manchego por <span id="precio-extras-quesoManchegoTiki"></span> más.</span>
                 </div><!-- Emparedado 2 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Emparedado Troya (*)</h4>
                     <p class="widget-producto__label no-margin">Con jamón, pollo y tocino dorado, jitomate, cebolla, aguacate, lechuga y mayonesa, acompañado con salsa de chile serrano y ensalada:
-                        <span class="widget-producto__texto">$125</span>
+                        <span class="widget-producto__texto" id="precio-emparedado-troya"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Agrega queso manchego por $25 más.</span>
+                    <span class="widget-producto__subtexto">(*) Agrega queso manchego por <span id="precio-extras-quesoManchegoTroya"></span> más.</span>
                 </div><!-- Emparedado 3 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Emparedado Picnic</h4>
                     <p class="widget-producto__label no-margin">Pan de 12 granos tostado relleno de jamón, queso manchego, rodajas de jitomate, lechuga, rajas en vinagre y mayonesa:
-                        <span class="widget-producto__texto">$66</span>
+                        <span class="widget-producto__texto" id="precio-emparedado-picnic"></span>
                     </p>
                 </div><!-- Emparedado 4 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Emparedado Greenwich</h4>
                     <p class="widget-producto__label no-margin">Pan de 12 granos tostado con hummus y aguacate relleno de espinaca, rodajas de pepino, jitomate y un toque de cebolla:
-                        <span class="widget-producto__texto">$72</span>
+                        <span class="widget-producto__texto" id="precio-emparedado-greenwich"></span>
                     </p>
                 </div><!-- Emparedado 5 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Beduina (*)</h4>
                     <p class="widget-producto__label no-margin">Pan pita relleno de fajitas de pollo a la plancha, rodajas de pepino, jitomate, lechuga italiana, espinaca y toque de semillas de girasol, con aderezo griego de pepino y acompañado de aguacate:
-                        <span class="widget-producto__texto">$96</span>
+                        <span class="widget-producto__texto" id="precio-emparedado-beduina"></span>
                     </p>
                 </div><!-- Emparedado 6 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Beduina chipotle (*)</h4>
                     <p class="widget-producto__label no-margin">Rellena de fajitas de pollo, rodajas de jitomate, lechuga italiana, espinaca y aceitunas negras, con aderezo de chipotle y un toque de aguacate:
-                        <span class="widget-producto__texto">$104</span>
+                        <span class="widget-producto__texto" id="precio-emparedado-beduinaChipotle"></span>
                     </p>
                 </div><!-- Emparedado 7 -->
-                <p class="widget-producto__subtexto">(*) Ensalada adicional: $28</p>
-                <p class="widget-producto__subtexto">(*) Papas adicionales: $31</p>
+                <p class="widget-producto__subtexto">(*) Ensalada adicional: <span id="precio-extras-extraEnsaladaEmparedados"></span></p>
+                <p class="widget-producto__subtexto">(*) Papas adicionales: <span id="precio-extras-extraPapasEmparedados"></span></p>
             </div>
         </section><!-- Producto 8 (Emparedados) -->
 
@@ -558,22 +561,22 @@
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Ensalada Safira</h4>
                     <p class="widget-producto__label no-margin">Lechuga italiana, pepino, jitomate, quinoa, cuadritos de aguacate y queso panela, acompañado de aderezo de mostaza y miel:
-                        <span class="widget-producto__texto">$94</span>
+                        <span class="widget-producto__texto" id="precio-ensalada-safira"></span>
                     </p>
                 </div><!-- Ensalada 1 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Ensalada Melisandre</h4>
                     <p class="widget-producto__label no-margin">Lechuga italiana, medias lunas de manzana roja, salpicada de arándanos y nuez, con queso espolvoreado, acompañada de aderezo de mostaza y soya:
-                        <span class="widget-producto__texto">$100</span>
+                        <span class="widget-producto__texto" id="precio-ensalada-melisandre"></span>
                     </p>
                 </div><!-- Ensalada 2 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Ensalada Antigua</h4>
                     <p class="widget-producto__label no-margin">Trocitos de queso panela y jamón de pechuga de pavo sobre una base de lechuga italiana y espinaca, con una lluvia de ajonjolí y nuez, mezclada con rodajas de manzana y croutones, acompañada de aderezo de mostaza y soya:
-                        <span class="widget-producto__texto">$127</span>
+                        <span class="widget-producto__texto" id="precio-ensalada-antigua"></span>
                     </p>
                 </div><!-- Ensalada 3 -->
-                <p class="widget-producto__subtexto">(*) Agrega pollo (50 g) a cualquier ensalada por $33 más.</p>
+                <p class="widget-producto__subtexto">(*) Agrega pollo (50 g) a cualquier ensalada por <span id="precio-extras-polloEnsalada"></span> más.</p>
             </div>
         </section><!-- Producto 9 (Ensaladas) -->
 
@@ -583,35 +586,47 @@
             </div>
             <div class="widget-producto__informacion">
                 <h2 class="no-margin">Lo Dulce</h2>
-                <p class="widget-producto__label">Cacahuatoso. Pan blanco untado con crema de cacahuate, rodajas de plátano, espolvoreado de amaranto y trocitos de cacahuate.
-                    <span class="widget-producto__texto">Completa: $68 | Media orden: $47</span>
-                </p><!-- Dulce 1 -->
-                <p class="widget-producto__label">Dulcinea. Pan tostado, untado de queso crema, mermelada de fresa y espolvoreado de amaranto.
-                    <span class="widget-producto__texto">Completa: $65 | Media orden: $39</span>
-                </p><!-- Dulce 2 -->
+                <div class="widget-producto__opcion">
+                    <p class="widget-producto__label no-margin">Cacahuatoso. Pan blanco untado con crema de cacahuate, rodajas de plátano, espolvoreado de amaranto y trocitos de cacahuate.</p>
+                    <p class="widget-producto__label no-margin">Completa:
+                        <span class="widget-producto__texto" id="precio-dulce-cacahuatosoCompleta"></span>
+                    </p>
+                    <p class="widget-producto__label no-margin">Media orden:
+                        <span class="widget-producto__texto" id="precio-dulce-cacahuatosoMedia"></span>
+                    </p>
+                </div><!-- Dulce 1 -->
+                <div class="widget-producto__opcion">
+                    <p class="widget-producto__label no-margin">Dulcinea. Pan tostado, untado de queso crema, mermelada de fresa y espolvoreado de amaranto.</p>
+                    <p class="widget-producto__label no-margin">Completa:
+                        <span class="widget-producto__texto" id="precio-dulce-dulcineaCompleta"></span>
+                    </p>
+                    <p class="widget-producto__label no-margin">Media orden:
+                        <span class="widget-producto__texto" id="precio-dulce-dulcineaMedia"></span>
+                    </p>
+                </div><!-- Dulce 2 -->
                 <p class="widget-producto__label">Hot cakes. Con mermelada, cajeta o maple:
-                    <span class="widget-producto__texto">$98</span>
+                    <span class="widget-producto__texto" id="precio-dulce-hotCakes"></span>
                 </p><!-- Dulce 3 -->
                 <p class="widget-producto__label">Panqué de plátano:
-                    <span class="widget-producto__texto">$47</span>
+                    <span class="widget-producto__texto" id="precio-dulce-panquePlatano"></span>
                 </p><!-- Dulce 4 -->
                 <p class="widget-producto__label">Panqué de zanahoria:
-                    <span class="widget-producto__texto">$60</span>
+                    <span class="widget-producto__texto" id="precio-dulce-panqueZanahoria"></span>
                 </p><!-- Dulce 5 -->
                 <p class="widget-producto__label">Bola de helado. Fresa, vainilla o chocolate:
-                    <span class="widget-producto__texto">$39</span>
+                    <span class="widget-producto__texto" id="precio-dulce-bolaHelado"></span>
                 </p><!-- Dulce 6 -->
                 <p class="widget-producto__label">Mini dosis chocolatera:
-                    <span class="widget-producto__texto">$37</span>
+                    <span class="widget-producto__texto" id="precio-dulce-miniDosisChocolatera"></span>
                 </p><!-- Dulce 7 -->
                 <p class="widget-producto__label">Barra de panqué de plátano:
-                    <span class="widget-producto__texto">$197</span>
+                    <span class="widget-producto__texto" id="precio-dulce-barraPanquePlatano"></span>
                 </p><!-- Dulce 8 -->
                 <p class="widget-producto__label">Barra de panqué de zanahoria:
-                    <span class="widget-producto__texto">$265</span>
+                    <span class="widget-producto__texto" id="precio-dulce-barraPanqueZanahoria"></span>
                 </p><!-- Dulce 9 -->
                 <p class="widget-producto__label">Pastel de chocolate:
-                    <span class="widget-producto__texto">$76</span>
+                    <span class="widget-producto__texto" id="precio-dulce-pastelChocolate"></span>
                 </p><!-- Dulce 10 -->
             </div>
         </section><!-- Producto 10 (Lo Dulce) -->
@@ -623,16 +638,16 @@
             <div class="widget-producto__informacion">
                 <h2 class="no-margin">Para Pasar el Rato</h2>
                 <p class="widget-producto__label">Palomitas:
-                    <span class="widget-producto__texto">$45</span>
+                    <span class="widget-producto__texto" id="precio-snack-palomitas"></span>
                 </p><!-- Snack 1 -->
                 <p class="widget-producto__label">Papas Marineras. Hojuelas de papa fritas preparadas con salsa valentina, salsa inglesa, Tajín, limón y sal:
-                    <span class="widget-producto__texto">$61</span>
+                    <span class="widget-producto__texto" id="precio-snack-papasMarineras"></span>
                 </p><!-- Snack 2 -->
-                <p class="widget-producto__label">Papas fritas. Preparadas con salsa valentina, limón y sal:
-                    <span class="widget-producto__texto">$49</span>
+                <p class="widget-producto__label">Papas Fritas. Preparadas con salsa valentina, limón y sal:
+                    <span class="widget-producto__texto" id="precio-snack-papasFritas"></span>
                 </p><!-- Snack 3 -->
                 <p class="widget-producto__label">Hummus. Completamente casero, acompañado con pan pita tostado:
-                    <span class="widget-producto__texto">$50</span>
+                    <span class="widget-producto__texto" id="precio-snack-hummus"></span>
                 </p><!-- Snack 4 -->
             </div>
         </section><!-- Producto 11 (Para Pasar el Rato) -->
@@ -646,51 +661,58 @@
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Enchiladas Casandra</h4>
                     <p class="widget-producto__label no-margin">Rellenas de calabaza asada, cubiertas con salsa verde, lechuga, crema, queso y aguacate, acompañadas de frijoles de olla:
-                        <span class="widget-producto__texto">$99</span>
+                        <span class="widget-producto__texto" id="precio-vegetariano-enchiladasCasandra"></span>
                     </p>
                 </div><!-- Vegetariano 1 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Chilaquiles</h4>
                     <p class="widget-producto__label no-margin">Verdes o rojos con crema, queso, cebolla picada, acompañados de frijoles:
-                        <span class="widget-producto__texto">$97</span>
+                        <span class="widget-producto__texto" id="precio-vegetariano-chilaquiles"></span>
                     </p>
                 </div><!-- Vegetariano 2 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Emparedado Greenwich</h4>
                     <p class="widget-producto__label no-margin">Pan de 12 granos tostado con hummus y aguacate relleno de espinaca, rodajas de pepino, jitomate y un toque de cebolla:
-                        <span class="widget-producto__texto">$72</span>
+                        <span class="widget-producto__texto" id="precio-vegetariano-emparedadoGreenwich"></span>
                     </p>
                 </div><!-- Vegetariano 3 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Hamburguesa Ceres</h4>
                     <p class="widget-producto__label no-margin">Hamburguesa vegetariana de lenteja con rodajas de jitomate, pepino, cebolla, lechuga y chiles en vinagre:
-                        <span class="widget-producto__texto">$98</span>
+                        <span class="widget-producto__texto" id="precio-vegetariano-hamburguesaCeres"></span>
                     </p>
                 </div><!-- Vegetariano 4 -->
                 <div class="widget-producto__opcion">
-                    <h4 class="no-margin">Tostados de campo</h4>
-                    <p class="widget-producto__label no-margin">Pan de 12 granos aderezado con hummus, aguacate, pepino y betabel rallado acompañado de aderezo de soya.
-                        <span class="widget-producto__texto">$108</span>
+                    <h4 class="no-margin">Tostados de Campo</h4>
+                    <p class="widget-producto__label no-margin">Pan de 12 granos aderezado con hummus, aguacate, pepino y betabel rallado acompañado de aderezo de soya.</p>
+                    <p class="widget-producto__label no-margin">Completa:
+                        <span class="widget-producto__texto" id="precio-vegetariano-tostadosCampoCompleta"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Media porción acompañada de ensalada: $81</span>
+                    <p class="widget-producto__label no-margin">Media porción (acompañada de ensalada):
+                        <span class="widget-producto__texto" id="precio-vegetariano-tostadosCampoMedia"></span>
+                    </p>
                 </div><!-- Vegetariano 5 -->
                 <div class="widget-producto__opcion">
-                    <h4 class="no-margin">Tostados granjeros</h4>
-                    <p class="widget-producto__label no-margin">Pan de 12 granos untado de mantequilla a las finas hierbas, con una crepa horneada de huevo revuelto con espinaca, acompañado de lechuga, queso panela y jitomate.
-                        <span class="widget-producto__texto">$116</span>
+                    <h4 class="no-margin">Tostados Granjeros</h4>
+                    <p class="widget-producto__label no-margin">Pan de 12 granos untado de mantequilla a las finas hierbas, con una crepa horneada de huevo revuelto con espinaca, acompañado de lechuga, queso panela y jitomate.</p>
+                    <p class="widget-producto__label no-margin">Completa:
+                        <span class="widget-producto__texto" id="precio-vegetariano-tostadosGranjerosCompleta"></span>
                     </p>
-                    <span class="widget-producto__subtexto">(*) Media porción acompañada de ensalada: $78</span>
+                    <p class="widget-producto__label no-margin">Media porción (acompañada de ensalada):
+                        <span class="widget-producto__texto" id="precio-vegetariano-tostadosGranjerosMedia"></span>
+                    </p>
+
                 </div><!-- Vegetariano 6 -->
                 <div class="widget-producto__opcion">
                     <h4 class="no-margin">Beduina (*)</h4>
                     <p class="widget-producto__label no-margin">Pan pita relleno de fajitas de lenteja, rodajas de pepino, jitomate, lechuga, espinaca y toque de semillas de girasol, con aderezo griego de pepino y acompañado de aguacate:
-                        <span class="widget-producto__texto">$96</span>
+                        <span class="widget-producto__texto" id="precio-vegetariano-beduina"></span>
                     </p>
                 </div><!-- Vegetariano 7 -->
                 <div class="widget-producto__opcion">
-                    <h4 class="no-margin">Beduina chipotle (*)</h4>
+                    <h4 class="no-margin">Beduina Chipotle (*)</h4>
                     <p class="widget-producto__label no-margin">Rellena de fajitas de lenteja, rodajas de jitomate, lechuga, espinaca y aceitunas negras, con aderezo de chipotle y un toque de aguacate:
-                        <span class="widget-producto__texto">$104</span>
+                        <span class="widget-producto__texto" id="precio-vegetariano-beduinaChipotle"></span>
                     </p>
                 </div><!-- Vegetariano 8 -->
             </div>
@@ -703,46 +725,46 @@
             <div class="widget-producto__informacion">
                 <h2 class="no-margin">Paquetes</h2>
                 <p class="widget-producto__label">Americano de la casa + panqué de plátano:
-                    <span class="widget-producto__texto">$79</span>
+                    <span class="widget-producto__texto" id="precio-paquete-americano"></span>
                 </p><!-- Paquete 1 -->
                 <h4 class="no-margin">Desayuno:</h4>
                 <p class="widget-producto__label">Paquete 1<br>
                     Chilaquiles o huevos al gusto + americano + panqué de plátano:
-                    <span class="widget-producto__texto">$172</span>
+                    <span class="widget-producto__texto" id="precio-paquete-desayuno1"></span>
                 </p><!-- Paquete 2 -->
                 <p class="widget-producto__label">Paquete 2<br>
                     Chilaquiles o huevos al gusto + plato de papaya chico + americano + panqué de plátano:
-                    <span class="widget-producto__texto">$215</span>
+                    <span class="widget-producto__texto" id="precio-paquete-desayuno2"></span>
                 </p><!-- Paquete 3 -->
                 <h4 class="no-margin">Hamburguesas:</h4>
                 <p class="widget-producto__label">Clásica + papas o ensalada + Refresco o Pepinolis:
-                    <span class="widget-producto__texto">$155</span>
+                    <span class="widget-producto__texto" id="precio-paquete-clasica"></span>
                 </p><!-- Paquete 4 -->
                 <p class="widget-producto__label">Ceres + papas o ensalada + Refresco o Pepinolis:
-                    <span class="widget-producto__texto">$155</span>
+                    <span class="widget-producto__texto" id="precio-paquete-ceres"></span>
                 </p><!-- Paquete 5 -->
                 <p class="widget-producto__label">Hawaiana + papas o ensalada + Refresco o Pepinolis:
-                    <span class="widget-producto__texto">$172</span>
+                    <span class="widget-producto__texto" id="precio-paquete-hawaiana"></span>
                 </p><!-- Paquete 6 -->
                 <p class="widget-producto__label">Ávalon + papas o ensalada + Refresco o Pepinolis:
-                    <span class="widget-producto__texto">$172</span>
+                    <span class="widget-producto__texto" id="precio-paquete-avalon"></span>
                 </p><!-- Paquete 7 -->
                 <p class="widget-producto__label">Meztli + papas o ensalada + Refresco o Pepinolis:
-                    <span class="widget-producto__texto">$192</span>
+                    <span class="widget-producto__texto" id="precio-paquete-meztli"></span>
                 </p><!-- Paquete 8 -->
                 <p class="widget-producto__label">Medieval + papas o ensalada + Refresco o Pepinolis:
-                    <span class="widget-producto__texto">$240</span>
+                    <span class="widget-producto__texto" id="precio-paquete-medieval"></span>
                 </p><!-- Paquete 9 -->
                 <p class="widget-producto__label">Flamígera + papas o ensalada + Refresco o Pepinolis:
-                    <span class="widget-producto__texto">$182</span>
+                    <span class="widget-producto__texto" id="precio-paquete-flamigera"></span>
                 </p><!-- Paquete 10 -->
                 <p class="widget-producto__label">Carrie + papas o ensalada + Refresco o Pepinolis:
-                    <span class="widget-producto__texto">$186</span>
+                    <span class="widget-producto__texto" id="precio-paquete-carrie"></span>
                 </p><!-- Paquete 11 -->
                 <p class="widget-producto__label">Vasconcelos + papas o ensalada + Refresco o Pepinolis:
-                    <span class="widget-producto__texto">$156</span>
+                    <span class="widget-producto__texto" id="precio-paquete-vasconcelos"></span>
                 </p><!-- Paquete 12 -->
-                <span class="widget-producto__subtexto">(*) Cambia a queso manchego por $20 más.</span>
+                <span class="widget-producto__subtexto">(*) Cambia a queso manchego por <span id="precio-extras-quesoManchegoPaquetes"></span> más.</span>
             </div>
         </section><!-- Producto 13 (Paquetes) -->
         <p class="centrar-texto texto__bold texto__italic">(*) Los ingredientes extra se cobran aparte.</p>
@@ -752,9 +774,11 @@
             <a href="index.html">
                 <h1 class="logo__nombre no-margin centrar-texto">Café<span class="texto__bold">LaFauna</span></h1>
             </a><!-- Logo Footer de Café La Fauna -->
-            <p>© Copyright 2026 Café La Fauna. Todos los derechos reservados. | Desarrollado por <a href="https://www.linkedin.com/in/jorge-luis-fabila-ceballos/" target="_blank">Jorge Luis Fabila</a>.</p>
+            <p>© Copyright <span id="año"></span> Café La Fauna. Todos los derechos reservados. | Desarrollado por <a href="https://www.linkedin.com/in/jorge-luis-fabila-ceballos/" target="_blank">Jorge Luis Fabila</a>.</p>
         </div>
     </footer>
+    
+    <script src="js/precios.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
